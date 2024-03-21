@@ -28,7 +28,7 @@ function layoutViews({ children }) {
               <line x1="3" x2="21" y1="18" y2="18" />
             </svg>
           </div>
-          <nav className={`flex flex-col  items-end py-6 pr-4 clear-both `}>
+          <nav className={`flex flex-col  items-end py-6 pr-4 clear-both h-5`}>
             <span className={`transition-all ease-in-out delay-75 ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>ABOUT US</span>
             <span className={`transition-all ease-in-out delay-100 ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>FEATURES</span>
             <span className={`transition-all ease-in-out delay-150 ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>TESTIMONIALS</span>
