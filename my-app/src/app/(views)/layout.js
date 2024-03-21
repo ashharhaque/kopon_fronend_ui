@@ -5,20 +5,20 @@ function layoutViews({ children }) {
   const [menuToggleOpen,setMenuToggleOpen]=useState(false);
   return (
     <>
-      <div className="flex flex-col bg-purple-600 min-h-[100dvh] justify-between">
+      <div className="flex flex-col bg-purple-600 min-h-[100dvh] justify-between ">
         <header className="bg-green-700">
           <div className="float-right pt-2" onClick={()=>{
             console.log("on menu toggle--->");
-            setMenuToggleOpen(true);
+            setMenuToggleOpen(!menuToggleOpen);
           }}>
             <svg
-              class="feather feather-menu"
+              className="feather feather-menu"
               fill="none"
               height="24"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               viewBox="0 0 24 24"
               width="24"
               xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ function layoutViews({ children }) {
               <line x1="3" x2="21" y1="18" y2="18" />
             </svg>
           </div>
-          <nav className={`flex flex-col items-end py-2 pr-1 clear-both ${menuToggleOpen?"":"hidden"}`}>
+          <nav className={`flex flex-col  items-end py-6 pr-4 clear-both transition-all ease-in-out  ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>
             <span>ABOUT US</span>
             <span>FEATURES</span>
             <span>TESTIMONIALS</span>
