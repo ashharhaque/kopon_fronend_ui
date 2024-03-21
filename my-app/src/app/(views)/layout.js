@@ -28,12 +28,12 @@ function layoutViews({ children }) {
               <line x1="3" x2="21" y1="18" y2="18" />
             </svg>
           </div>
-          <nav className={`flex flex-col  items-end py-6 pr-4 clear-both transition-all ease-in-out  ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>
-            <span>ABOUT US</span>
-            <span>FEATURES</span>
-            <span>TESTIMONIALS</span>
-            <span>HOME</span>
-            <span>BLOG</span>
+          <nav className={`flex flex-col  items-end py-6 pr-4 clear-both `}>
+            <span className={`transition-all ease-in-out ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>ABOUT US</span>
+            <span className={`transition-all ease-in-out ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>FEATURES</span>
+            <span className={`transition-all ease-in-out ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>TESTIMONIALS</span>
+            <span className={`transition-all ease-in-out ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>HOME</span>
+            <span className={`transition-all ease-in-out ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>BLOG</span>
           </nav>
         </header>
         <div className="">{children}</div>
