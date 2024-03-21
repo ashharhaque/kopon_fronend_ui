@@ -33,7 +33,7 @@ function layoutViews({ children }) {
             <span className={`transition-all ease-in-out delay-100 ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>FEATURES</span>
             <span className={`transition-all ease-in-out delay-150 ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>TESTIMONIALS</span>
             <span className={`transition-all ease-in-out delay-200 ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>HOME</span>
-            <span className={`transition-all ease-in-out delay-200 ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>BLOG</span>
+            <span className={`transition-all ease-in-out delay-300 ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>BLOG</span>
           </nav>
         </header>
         <div className="">{children}</div>
