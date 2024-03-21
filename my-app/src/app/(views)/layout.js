@@ -1,11 +1,17 @@
+"use client"
+import { Hind_Madurai } from "next/font/google";
+import { useState } from "react";
 function layoutViews({ children }) {
+  const [menuToggleOpen,setMenuToggleOpen]=useState(false);
   return (
     <>
       <div className="flex flex-col bg-purple-600 min-h-[100dvh] justify-between">
         <header className="bg-green-700">
-          <nav className="flex flex-col items-end py-2">
-           <span>
-           <svg
+          <div className="float-right pt-2" onClick={()=>{
+            console.log("on menu toggle--->");
+            setMenuToggleOpen(true);
+          }}>
+            <svg
               class="feather feather-menu"
               fill="none"
               height="24"
@@ -21,8 +27,8 @@ function layoutViews({ children }) {
               <line x1="3" x2="21" y1="6" y2="6" />
               <line x1="3" x2="21" y1="18" y2="18" />
             </svg>
-           </span>
-
+          </div>
+          <nav className={`flex flex-col items-end py-2 pr-1 clear-both ${menuToggleOpen?"":"hidden"}`}>
             <span>ABOUT US</span>
             <span>FEATURES</span>
             <span>TESTIMONIALS</span>
