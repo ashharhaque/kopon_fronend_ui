@@ -16,11 +16,20 @@ function layoutViews({ children }) {
               setMenuToggleOpen(!menuToggleOpen);
             }}
           >
-            {menuToggleOpen?<IconCross2 />: <MenuIcon />}    
+            {menuToggleOpen ? (
+              <IconCross2 className={`transition-all delay-150 ${menuToggleOpen?"":""}`} />
+            ) : (
+              <MenuIcon className={`${menuToggleOpen}`} />
+            )}
+            
+              {/* <IconCross2 className={`transition-all delay-150 ease-in-out${menuToggleOpen?"hidden":"visible"}`} />
+           
+              <MenuIcon className={`transition-all delay-150 ease-in-out ${!menuToggleOpen?"hidden":"visible"}`} /> */}
+           
           </div>
 
           <nav
-            className={`flex flex-col py-6 pr-4 clear-both bg-yellow-400 w-[50%] items-center mx-auto`}
+            className={`flex flex-col py-6 pr-4 clear-both  items-center w-[50%] mx-auto transition-all ease-in-out duration-700 ${menuToggleOpen?"translate-y-8  bg-yellow-400 ":"-translate-y-full invisible "}`}
           >
             <span
               className={`transition-all ease-in-out delay-75 ${

@@ -3,7 +3,17 @@ import * as React from "react";
 
 function IconCross2(props) {
   return (
-    <svg fill="none" viewBox="0 0 15 15" height="1em" width="1em" {...props}>
+    <svg
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      width="24"
+      {...props}
+    >
       <path
         fill="currentColor"
         fillRule="evenodd"
@@ -14,25 +24,25 @@ function IconCross2(props) {
   );
 }
 
-function MenuIcon(props){
-  return(
+function MenuIcon(props) {
+  return (
     <svg
-              className="feather feather-menu"
-              fill="none"
-              height="24"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              width="24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line x1="3" x2="21" y1="12" y2="12" />
-              <line x1="3" x2="21" y1="6" y2="6" />
-              <line x1="3" x2="21" y1="18" y2="18" />
-            </svg>
-  )
+      className="feather feather-menu"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line x1="3" x2="21" y1="12" y2="12" />
+      <line x1="3" x2="21" y1="6" y2="6" />
+      <line x1="3" x2="21" y1="18" y2="18" />
+    </svg>
+  );
 }
 
-export {IconCross2,MenuIcon} ;
+export { IconCross2, MenuIcon };
