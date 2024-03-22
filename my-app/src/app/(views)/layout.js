@@ -5,8 +5,8 @@ function layoutViews({ children }) {
   const [menuToggleOpen,setMenuToggleOpen]=useState(false);
   return (
     <>
-      <div className="flex flex-col bg-purple-600 min-h-[100dvh] justify-between ">
-        <header className="bg-green-700">
+      <div className="flex flex-col bg-purple-600  min-h-dvh justify-between ">
+        <header className="bg-green-700 h-[10dvh]">
           <div className="float-right pt-2" onClick={()=>{
             console.log("on menu toggle--->");
             setMenuToggleOpen(!menuToggleOpen);
@@ -28,7 +28,7 @@ function layoutViews({ children }) {
               <line x1="3" x2="21" y1="18" y2="18" />
             </svg>
           </div>
-          <nav className={`flex flex-col py-6 pr-4 clear-both bg-yellow-400 items-center`}>
+          <nav className={`flex flex-col py-6 pr-4 clear-both bg-yellow-400 w-[50%] items-center mx-auto`}>
             <span className={`transition-all ease-in-out delay-75 ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>ABOUT US</span>
             <span className={`transition-all ease-in-out delay-100 ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>FEATURES</span>
             <span className={`transition-all ease-in-out delay-150 ${menuToggleOpen?"-translate-y-3 " : "-translate-y-full invisible"}`}>TESTIMONIALS</span>
