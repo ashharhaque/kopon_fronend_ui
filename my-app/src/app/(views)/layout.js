@@ -28,8 +28,11 @@ function layoutViews({ children }) {
            
           </div>
 
-          <nav
+          {/* <nav
             className={`flex flex-col py-6 pr-4 clear-both  items-center w-[50%] mx-auto transition-all ease-in-out duration-700 ${menuToggleOpen?"translate-y-8  bg-yellow-400 ":"-translate-y-full invisible "}`}
+          > */}
+           <nav
+            className={`flex flex-col py-6 pr-4 clear-both  items-center w-[50%] mx-auto transition-all  ease-in-out duration-700 origin-top ${menuToggleOpen?" bg-yellow-400 ":"scale-y-0 invisible "}`}
           >
             <span
               className={`transition-all ease-in-out delay-75 ${
