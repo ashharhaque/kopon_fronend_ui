@@ -25,18 +25,18 @@ function layoutViews({ children }) {
           > */}
           <h1>QOPON</h1>
           <nav
-            className={`flex flex-col py-6 pr-4  self-start absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top md:flex md:flex-row md:justify-between md:relative md:top-0 md:left-0 ${
+            className={`flex flex-col py-6 pr-4  self-start absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top md:flex md:flex-row md:justify-between md:relative md:top-0 md:left-0 md:transition-none ${
               menuToggleOpen
-                ? "sm:md: bg-yellow-400 translate-y-[0%]  "
-                : "sm:md:scale-y-0 invisible "
+                ? " bg-yellow-400 translate-y-[0%] md:bg-white "
+                : "scale-y-0 invisible md:visible md:scale-y-100"
             }`}
           >
             <span
               className={`transition-all ease-in-out delay-75 ${
                 menuToggleOpen
-                  ? "-translate-y-3 "
+                  ? "-translate-y-3 md:translate-y-0"
                   : "-translate-y-full invisible"
-              }`}
+              }md:transition-none md:translate-y-0`}
             >
               ABOUT US
             </span>
@@ -45,7 +45,7 @@ function layoutViews({ children }) {
                 menuToggleOpen
                   ? "-translate-y-3 "
                   : "-translate-y-full invisible"
-              }`}
+              }md:transition-none md:translate-y-0`}
             >
               FEATURES
             </span>
@@ -54,7 +54,7 @@ function layoutViews({ children }) {
                 menuToggleOpen
                   ? "-translate-y-3 "
                   : "-translate-y-full invisible"
-              }`}
+              }md:transition-none md:translate-y-0`}
             >
               TESTIMONIALS
             </span>
@@ -63,7 +63,7 @@ function layoutViews({ children }) {
                 menuToggleOpen
                   ? "-translate-y-3 "
                   : "-translate-y-full invisible"
-              }`}
+              }md:transition-none md:translate-y-0`}
             >
               HOME
             </span>
@@ -72,7 +72,7 @@ function layoutViews({ children }) {
                 menuToggleOpen
                   ? "-translate-y-3 "
                   : "-translate-y-full invisible"
-              }`}
+              }md:transition-none md:translate-y-0`}
             >
               BLOG
             </span>
