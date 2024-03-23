@@ -10,27 +10,26 @@ function layoutViews({ children }) {
     <>
       <div className="flex flex-col bg-purple-600  min-h-dvh justify-between ">
         <header className="flex flex-row justify-end  bg-green-700 h-[10dvh] relative">
-           {/* <div className="h-[10px] aspect-square"> */}
-           <Image
-              src={Logo}
-              priority
-              height={1000}
-              width={30}
-              alt="logo image"
-              className="bg-red-600 my-3"
-            />
-            {/* </div> */}
-          
-          
+          <Image
+            src={Logo}
+            // src={"/logo.jpg"}
+            priority
+            height={50}
+            width={10}
+            alt="logo image"
+            className="bg-red-600 my-3 self-start ]"
+          />
+
           {/* <nav
             className={`flex flex-col py-6 pr-4 clear-both  items-center w-[50%] mx-auto transition-all ease-in-out duration-700 ${menuToggleOpen?"translate-y-8  bg-yellow-400 ":"-translate-y-full invisible "}`}
           > */}
           <nav
             className={`flex flex-col py-6 pr-4  self-start relative top-full items-center w-[40%] mx-auto transition-all  ease-in-out duration-700 origin-top ${
-              menuToggleOpen ? " bg-yellow-400 translate-y-[0%] " : "scale-y-0 invisible "
+              menuToggleOpen
+                ? " bg-yellow-400 translate-y-[0%] "
+                : "scale-y-0 invisible "
             }`}
           >
-           
             <span
               className={`transition-all ease-in-out delay-75 ${
                 menuToggleOpen
@@ -84,7 +83,6 @@ function layoutViews({ children }) {
               setMenuToggleOpen(!menuToggleOpen);
             }}
           >
-           
             {menuToggleOpen ? (
               <IconCross2
                 className={`transition-all delay-150 ${
