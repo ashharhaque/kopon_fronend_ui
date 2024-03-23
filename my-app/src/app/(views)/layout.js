@@ -9,7 +9,7 @@ function layoutViews({ children }) {
   return (
     <>
       <div className="flex flex-col bg-purple-600  min-h-dvh justify-between ">
-        <header className="flex flex-row justify-end bg-green-700 h-[10dvh]">
+        <header className="flex flex-row justify-end bg-green-700 h-[10dvh] relative">
            {/* <div className="h-[10px] aspect-square"> */}
            <Image
               src={Logo}
@@ -26,8 +26,8 @@ function layoutViews({ children }) {
             className={`flex flex-col py-6 pr-4 clear-both  items-center w-[50%] mx-auto transition-all ease-in-out duration-700 ${menuToggleOpen?"translate-y-8  bg-yellow-400 ":"-translate-y-full invisible "}`}
           > */}
           <nav
-            className={`flex flex-col py-6 pr-4  mt-auto items-center w-[50%] mx-auto transition-all  ease-in-out duration-700 origin-top ${
-              menuToggleOpen ? " bg-yellow-400 translate-y-[50%] " : "scale-y-0 invisible "
+            className={`flex flex-col py-6 pr-4 relative  top-full  h-[min-content] items-center w-[30%] mx-auto transition-all  ease-in-out duration-700 origin-top ${
+              menuToggleOpen ? " bg-yellow-400 translate-y-[0%] " : "scale-y-0 invisible "
             }`}
           >
            
