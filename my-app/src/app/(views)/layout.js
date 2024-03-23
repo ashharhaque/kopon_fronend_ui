@@ -26,7 +26,7 @@ function layoutViews({ children }) {
             className={`flex flex-col py-6 pr-4 clear-both  items-center w-[50%] mx-auto transition-all ease-in-out duration-700 ${menuToggleOpen?"translate-y-8  bg-yellow-400 ":"-translate-y-full invisible "}`}
           > */}
           <nav
-            className={`flex flex-col py-6 pr-4  self-start relative top-full items-center w-[30%] mx-auto transition-all  ease-in-out duration-700 origin-top ${
+            className={`flex flex-col py-6 pr-4  self-start relative top-full items-center w-[40%] mx-auto transition-all  ease-in-out duration-700 origin-top ${
               menuToggleOpen ? " bg-yellow-400 translate-y-[0%] " : "scale-y-0 invisible "
             }`}
           >
