@@ -9,7 +9,7 @@ function layoutViews({ children }) {
   return (
     <>
       <div className="flex flex-col bg-purple-600  min-h-dvh justify-between ">
-        <header className="flex flex-row justify-between bg-green-700 h-[10dvh] relative">
+        <header className="flex flex-row justify-between bg-green-700 h-[10dvh] relative ">
           <Image
             src={Logo}
             // src={"/logo.jpg"}
@@ -23,9 +23,9 @@ function layoutViews({ children }) {
           {/* <nav
             className={`flex flex-col py-6 pr-4 clear-both  items-center w-[50%] mx-auto transition-all ease-in-out duration-700 ${menuToggleOpen?"translate-y-8  bg-yellow-400 ":"-translate-y-full invisible "}`}
           > */}
-          <h1>QOPON</h1>
+          <h1 className="bg-red-600">QOPON</h1>
           <nav
-            className={`flex flex-col py-6 pr-4  self-start absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top md:flex md:flex-row md:justify-between md:relative md:top-0 md:left-0 md:transition-none ${
+            className={`flex flex-col py-6 pr-4 self-start absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top md:bg-fuchsia-700  md:flex md:flex-row md:justify-between md:relative md:top-0 md:left-0 md:transition-none ${
               menuToggleOpen
                 ? " bg-yellow-400 translate-y-[0%] md:bg-white "
                 : "scale-y-0 invisible md:visible md:scale-y-100"
@@ -78,7 +78,7 @@ function layoutViews({ children }) {
             </span>
           </nav>
           <div
-            className=" pt-2"
+            className=" pt-2 md:hidden"
             onClick={() => {
               console.log("on menu toggle--->");
               setMenuToggleOpen(!menuToggleOpen);
@@ -91,7 +91,7 @@ function layoutViews({ children }) {
                 }`}
               />
             ) : (
-              <MenuIcon className="md:hidden" />
+              <MenuIcon className="" />
             )}
 
             {/* <IconCross2 className={`transition-all delay-150 ease-in-out${menuToggleOpen?"hidden":"visible"}`} />
