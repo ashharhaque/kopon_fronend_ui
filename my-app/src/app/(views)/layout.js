@@ -9,13 +9,13 @@ function layoutViews({ children }) {
   return (
     <>
       <div className="flex flex-col bg-purple-600  min-h-dvh justify-between ">
-        <header className="flex flex-row justify-end  bg-green-700 h-[10dvh] relative">
+        <header className="flex flex-row justify-between bg-green-700 h-[10dvh] relative">
           <Image
             src={Logo}
             // src={"/logo.jpg"}
             priority
             height={50}
-            width={10}
+            width={50}
             alt="logo image"
             className="bg-red-600 my-3 self-start ]"
           />
@@ -23,8 +23,9 @@ function layoutViews({ children }) {
           {/* <nav
             className={`flex flex-col py-6 pr-4 clear-both  items-center w-[50%] mx-auto transition-all ease-in-out duration-700 ${menuToggleOpen?"translate-y-8  bg-yellow-400 ":"-translate-y-full invisible "}`}
           > */}
+          <h1>QOPON</h1>
           <nav
-            className={`flex flex-col py-6 pr-4  self-start relative top-full items-center w-[40%] mx-auto transition-all  ease-in-out duration-700 origin-top ${
+            className={`flex flex-col py-6 pr-4  self-start absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top ${
               menuToggleOpen
                 ? " bg-yellow-400 translate-y-[0%] "
                 : "scale-y-0 invisible "
