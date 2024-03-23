@@ -14,10 +14,10 @@ function layoutViews({ children }) {
            <Image
               src={Logo}
               priority
-              height={30}
+              height={1000}
               width={30}
               alt="logo image"
-              className="bg-red-600"
+              className="bg-red-600 my-3"
             />
             {/* </div> */}
           
@@ -27,7 +27,7 @@ function layoutViews({ children }) {
           > */}
           <nav
             className={`flex flex-col py-6 pr-4  mt-auto items-center w-[50%] mx-auto transition-all  ease-in-out duration-700 origin-top ${
-              menuToggleOpen ? " bg-yellow-400 translate-y-[30%] " : "scale-y-0 invisible "
+              menuToggleOpen ? " bg-yellow-400 translate-y-[25%] " : "scale-y-0 invisible "
             }`}
           >
            
