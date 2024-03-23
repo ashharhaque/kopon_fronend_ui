@@ -25,10 +25,10 @@ function layoutViews({ children }) {
           > */}
           <h1>QOPON</h1>
           <nav
-            className={`flex flex-col py-6 pr-4  self-start absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top ${
+            className={`flex flex-col py-6 pr-4  self-start absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top md:flex md:flex-row md:justify-between md:relative md:top-0 md:left-0 ${
               menuToggleOpen
-                ? " bg-yellow-400 translate-y-[0%] "
-                : "scale-y-0 invisible "
+                ? "sm:md: bg-yellow-400 translate-y-[0%]  "
+                : "sm:md:scale-y-0 invisible "
             }`}
           >
             <span
