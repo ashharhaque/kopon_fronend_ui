@@ -24,10 +24,11 @@ function IconCross2(props) {
   );
 }
 
-function MenuIcon(props) {
+function MenuIcon({className}) {
   return (
     <svg
-      className="feather feather-menu"
+      // className="feather feather-menu"
+      className={className}
       fill="none"
       height="24"
       stroke="currentColor"

@@ -91,7 +91,7 @@ function layoutViews({ children }) {
                 }`}
               />
             ) : (
-              <MenuIcon className={`${menuToggleOpen}`} />
+              <MenuIcon className="md:hidden" />
             )}
 
             {/* <IconCross2 className={`transition-all delay-150 ease-in-out${menuToggleOpen?"hidden":"visible"}`} />
