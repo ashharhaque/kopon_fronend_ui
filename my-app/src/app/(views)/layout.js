@@ -17,15 +17,15 @@ function layoutViews({ children }) {
             height={50}
             width={50}
             alt="logo image"
-            className="bg-red-600 my-3 self-start ]"
+            className="bg-red-600 self-start h-[90%] w-[20%]"
           />
 
           {/* <nav
             className={`flex flex-col py-6 pr-4 clear-both  items-center w-[50%] mx-auto transition-all ease-in-out duration-700 ${menuToggleOpen?"translate-y-8  bg-yellow-400 ":"-translate-y-full invisible "}`}
           > */}
-          <h1 className="bg-red-600">QOPON</h1>
+          <h12 className="bg-red-600  ">QOPON</h12>
           <nav
-            className={`flex flex-col py-6 pr-4 self-start absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top md:bg-fuchsia-700  md:flex md:flex-row md:self-stretch md:justify-around md:relative md:top-0 md:left-0 md:transition-none ${
+            className={`flex  flex-col py-6 pr-4  absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top md:bg-fuchsia-700  md:flex md:flex-row md:self-stretch md:justify-around md:p-0 md:relative md:top-0 md:left-0 md:transition-none ${
               menuToggleOpen
                 ? " bg-yellow-400 translate-y-[0%] md:bg-white "
                 : "scale-y-0 invisible md:visible md:scale-y-100"
