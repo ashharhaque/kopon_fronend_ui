@@ -29,7 +29,7 @@ function layoutViews({ children }) {
           <nav
             className={`flex  flex-col py-6 pr-4  absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top   md:flex md:flex-row md:self-stretch md:justify-around md:p-0 md:relative md:top-0 md:left-0 md:transition-none ${
               menuToggleOpen
-                ? " bg-yellow-400 translate-y-[0%] md:bg-white "
+                ? " bg-zinc-50 translate-y-[0%] md:bg-white "
                 : "scale-y-0 invisible md:visible md:scale-y-100"
             }`}
           >
