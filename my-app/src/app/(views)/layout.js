@@ -9,7 +9,7 @@ function layoutViews({ children }) {
   const [menuToggleOpen, setMenuToggleOpen] = useState(false);
   return (
     <>
-      <div className="flex flex-col bg-gradient-to-b from-teal-100 to-sky-400  min-h-dvh justify-between ">
+      <div className="flex flex-col bg-gradient-to-b from-emerald-50 to-teal-400   min-h-dvh justify-between ">
         <header className="flex flex-row justify-around bg-green-700 h-[10dvh] relative ">
           <Image
             // src={Logo}
