@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 // import KoponLogo from "./../../../public/Kopon_transparent.png"
 import KoponLogo from "@/public/Kopon_transparent.png";
-import { MenuIcon, IconCross2 } from "@/icons/svgicon";
+import { MenuIcon, IconCross2 ,AdressIcon} from "@/icons/svgicon";
 
 function layoutViews({ children }) {
   const [menuToggleOpen, setMenuToggleOpen] = useState(false);
@@ -133,7 +133,7 @@ function layoutViews({ children }) {
             <div className="bg-teal-200 p-3 text-center">
             <h3>Contact</h3>
               <ul>
-                <li>Address-1053,saidulajayb,saket,delhi</li>
+                <li className="bg-yellow-600 relative"><span><AdressIcon className="bg-red-600 inline-block"/>Address</span></li>
                 <li>Phone Number</li>
                 <li>Email</li>
                 <li>Fax</li>
