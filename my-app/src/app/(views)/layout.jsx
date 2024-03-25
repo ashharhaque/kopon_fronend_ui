@@ -173,7 +173,7 @@ function layoutViews({ children }) {
             </div>
           </div>
           <div className=" flex flex-row py-5 justify-around bg-green-400 min-h-[15%]">
-            <ul className="flex ">
+            <ul className="flex flex-wrap justify-center">
               <li className="text-center m-2 md:m-3 flex items-center">Follow Us</li>
               <li className=" h-10 w-10 m-2 md:m-3">
                 <Image
