@@ -21,8 +21,8 @@ function layoutViews({ children }) {
   const [menuToggleOpen, setMenuToggleOpen] = useState(false);
   return (
     <>
-      <div className="flex flex-col bg-gradient-to-b from-emerald-50 to-teal-400   min-h-dvh justify-between ">
-        <header className="flex flex-row justify-around h-[10dvh] relative bg-green-500">
+      <div className="flex flex-col bg-gradient-to-b from-emerald-50 to-emerald-100   min-h-dvh justify-between ">
+        <header className="flex flex-row justify-around h-[10dvh] relative ">
           <Image
             // src={Logo}
             // src={"/logo.jpg"}
@@ -31,7 +31,7 @@ function layoutViews({ children }) {
             // height={50}
             // width={50}
             alt="logo image"
-            className="bg-red-600 self-start h-[90%] w-[35%]  mt-1 object-cover"
+            className=" self-start h-[90%] w-[35%]  mt-1 object-cover"
           />
 
           {/* <nav
@@ -39,7 +39,7 @@ function layoutViews({ children }) {
           > */}
           {/* <h12 className="bg-red-600  ">QOPON</h12> */}
           <nav
-            className={`bg-fuchsia-700 flex  flex-col py-6 pr-4  absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top   md:flex md:flex-row md:self-stretch md:justify-around md:p-0 md:relative md:top-0 md:left-0 md:transition-none ${
+            className={` flex  flex-col py-6 pr-4  absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top   md:flex md:flex-row md:self-stretch md:justify-around md:p-0 md:relative md:top-0 md:left-0 md:transition-none ${
               menuToggleOpen
                 ? " bg-zinc-50 translate-y-[0%] md:bg-white "
                 : "scale-y-0 invisible md:visible md:scale-y-100"
@@ -114,9 +114,9 @@ function layoutViews({ children }) {
           </div>
         </header>
         <div className="h-[200dvh]">{children}</div>
-        <footer className="bg-yellow-300 flex flex-col min-h-[40dvh]">
-          <div className="bg-blue-500 min-h-[85%] flex flex-col md:flex-row  justify-around ">
-            <div className="bg-red-500 p-3 flex flex-col gap-5 text-center basis-[20%] ">
+        <footer className="flex flex-col min-h-[40dvh]">
+          <div className="min-h-[85%] flex flex-col md:flex-row  justify-around ">
+            <div className=" p-3 flex flex-col gap-5 text-center basis-[20%] ">
               <h3 className="">Company Name</h3>
               <p className="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
@@ -124,7 +124,7 @@ function layoutViews({ children }) {
                 distinctio perspiciatis itaque perferendis laborum nesciunt!
               </p>
             </div>
-            <div className="bg-pink-300 flex flex-col gap-5 p-3 text-center">
+            <div className=" flex flex-col gap-5 p-3 text-center">
               <h3 className="">Products</h3>
               <ul>
                 <li>SMART PHONE</li>
@@ -133,7 +133,7 @@ function layoutViews({ children }) {
                 <li>NETALS</li>
               </ul>
             </div>
-            <div className="bg-orange-400 flex flex-col gap-5 p-3 text-center">
+            <div className=" flex flex-col gap-5 p-3 text-center">
               <h3>Useful Link</h3>
               <ul>
                 <li>Your account</li>
@@ -142,37 +142,37 @@ function layoutViews({ children }) {
                 <li>Help</li>
               </ul>
             </div>
-            <div className="bg-teal-200 flex flex-col gap-5 p-3 text-center">
+            <div className=" flex flex-col gap-5 p-3 text-center">
               <h3>Contact</h3>
               <ul className="">
-                <li className="bg-white relative">
+                <li className=" relative text-wrap">
                   <span>
-                    <AdressIcon className="bg-red-600 inline-block h-[100%] absolute top-0 left-0" />
+                    <AdressIcon className=" inline-block h-[100%] absolute top-0 left-0" />
                     Adress-saket,saidulajayab,westend marg,saket
                   </span>
                 </li>
-                <li className="bg-pink-500 relative">
+                <li className=" relative">
                   <span>
-                    <CallIcon className="bg-pink-400 inline-block h-[100%] absolute top-0 left-0" />
+                    <CallIcon className="inline-block h-[100%] absolute top-0 left-0" />
                     Phone Number
                   </span>
                 </li>
                 <li className=" relative">
                   <span>
-                    <EmailIcon className="bg-yellow-500 inline-block h-[100%] absolute top-0 left-0" />
+                    <EmailIcon className="inline-block h-[100%] absolute top-0 left-0" />
                     Email
                   </span>
                 </li>
-                <li className="bg-green-500 relative">
+                <li className=" relative">
                   <span>
-                    <FaxMachine className="bg-blue-700 inline-block h-[100%] absolute top-0 left-0" />
+                    <FaxMachine className=" inline-block h-[100%] absolute top-0 left-0" />
                     Fax
                   </span>
                 </li>
               </ul>
             </div>
           </div>
-          <div className=" flex flex-col py-5 justify-around bg-green-400 min-h-[15%]">
+          <div className=" flex flex-col py-5 justify-around  min-h-[15%]">
               <div className="text-center m-2 md:m-3 flex justify-center items-center">Follow Us</div>
 
             <ul className="flex flex-wrap justify-center">
