@@ -133,7 +133,7 @@ function layoutViews({ children }) {
             <div className="bg-teal-200 p-3 text-center">
             <h3>Contact</h3>
               <ul>
-                <li className="bg-yellow-600 relative"><span><AdressIcon className="bg-red-600 inline-block"/>Address</span></li>
+                <li className="bg-yellow-600 relative"><span><AdressIcon className="bg-red-600 inline-block"/>Adress-saket,saidulajayab,westend marg,saket</span></li>
                 <li>Phone Number</li>
                 <li>Email</li>
                 <li>Fax</li>
