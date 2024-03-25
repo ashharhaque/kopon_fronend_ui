@@ -172,8 +172,9 @@ function layoutViews({ children }) {
               </ul>
             </div>
           </div>
-          <div className="bg-green-400 min-h-[15%]">
-            <ul className="flex">
+          <div className=" flex flex-row justify-around bg-green-400 min-h-[15%]">
+            <ul className="flex ">
+              <li className="text-center">Follow Us</li>
               <li className="bg-pink-500 h-10 w-10">
                 <Image src={InstagramIcon} className="object-cover" />
               </li>
@@ -186,10 +187,11 @@ function layoutViews({ children }) {
               <li className="bg-yellow-500 h-10 w-10">
                 <Image src={XIcon} className="object-cover" />
               </li>
-              <li className="bg-white-500 h-10 w-10">
+              <li className="bg-white h-10 w-10">
                 <Image src={LinkedInIcon} className="object-cover" />
               </li>
             </ul>
+           
           </div>
         </footer>
       </div>
