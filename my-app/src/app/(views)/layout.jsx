@@ -3,8 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Logo from "./../../../public/logo.jpg";
 import KoponLogo from "./../../../public/Kopon_transparent.png"
-// import { IconCross2 } from "../_components/_icon/_socialMediaIcons/svgicon";
-import { IconCross2, MenuIcon } from "@/icons/_socialMediaIcons/svgicon";
+import { IconCross2,MenuIcon } from "../_commonComponents/_icon/svgicon";
+
 function layoutViews({ children }) {
   const [menuToggleOpen, setMenuToggleOpen] = useState(false);
   return (
