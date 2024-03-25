@@ -3,7 +3,19 @@ import { useState } from "react";
 import Image from "next/image";
 // import KoponLogo from "./../../../public/Kopon_transparent.png"
 import KoponLogo from "@/public/Kopon_transparent.png";
-import { MenuIcon, IconCross2 ,AdressIcon,CallIcon,EmailIcon,FaxMachine} from "@/icons/svgicon";
+import InstagramIcon from "@/public/icons/instagram.svg";
+import FaceBookIcon from "@/public/icons/facbook.svg";
+import YoutubeIcon from "@/public/icons/youtube-red.svg";
+import LinkedInIcom from "@/public/icons/linkedin.svg";
+import XIcon from "@/public/icons/twitterX.svg";
+import {
+  MenuIcon,
+  IconCross2,
+  AdressIcon,
+  CallIcon,
+  EmailIcon,
+  FaxMachine,
+} from "@/icons/svgicon";
 
 function layoutViews({ children }) {
   const [menuToggleOpen, setMenuToggleOpen] = useState(false);
@@ -131,16 +143,54 @@ function layoutViews({ children }) {
               </ul>
             </div>
             <div className="bg-teal-200 p-3 text-center">
-            <h3>Contact</h3>
+              <h3>Contact</h3>
               <ul className="">
-                <li className="bg-white relative"><span><AdressIcon className="bg-red-600 inline-block h-[100%] absolute top-0 left-0"/>Adress-saket,saidulajayab,westend marg,saket</span></li>
-                <li className="bg-pink-500 relative"><span><CallIcon className="bg-pink-400 inline-block h-[100%] absolute top-0 left-0"/>Phone Number</span></li>
-                <li className=" relative"><span><EmailIcon className="bg-yellow-500 inline-block h-[100%] absolute top-0 left-0"/>Email</span></li>
-                <li className="bg-green-500 relative"><span><FaxMachine className="bg-blue-700 inline-block h-[100%] absolute top-0 left-0"/>Fax</span></li>
+                <li className="bg-white relative">
+                  <span>
+                    <AdressIcon className="bg-red-600 inline-block h-[100%] absolute top-0 left-0" />
+                    Adress-saket,saidulajayab,westend marg,saket
+                  </span>
+                </li>
+                <li className="bg-pink-500 relative">
+                  <span>
+                    <CallIcon className="bg-pink-400 inline-block h-[100%] absolute top-0 left-0" />
+                    Phone Number
+                  </span>
+                </li>
+                <li className=" relative">
+                  <span>
+                    <EmailIcon className="bg-yellow-500 inline-block h-[100%] absolute top-0 left-0" />
+                    Email
+                  </span>
+                </li>
+                <li className="bg-green-500 relative">
+                  <span>
+                    <FaxMachine className="bg-blue-700 inline-block h-[100%] absolute top-0 left-0" />
+                    Fax
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
-          <div className="bg-green-400 min-h-[15%]">b</div>
+          <div className="bg-green-400 min-h-[15%]">
+            <ul className="flex">
+              <li className="bg-pink-500 h-10 w-10">
+                <Image src={InstagramIcon} className="object-cover" />
+              </li>
+              <li className="bg-pink-500 h-10 w-10">
+                <Image src={InstagramIcon} className="object-cover" />
+              </li>
+              <li className="bg-pink-500 h-10 w-10">
+                <Image src={InstagramIcon} className="object-cover" />
+              </li>
+              <li className="bg-pink-500 h-10 w-10">
+                <Image src={InstagramIcon} className="object-cover" />
+              </li>
+              <li className="bg-pink-500 h-10 w-10">
+                <Image src={InstagramIcon} className="object-cover" />
+              </li>
+            </ul>
+          </div>
         </footer>
       </div>
     </>
