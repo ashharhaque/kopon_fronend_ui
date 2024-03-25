@@ -4,10 +4,10 @@ import Image from "next/image";
 // import KoponLogo from "./../../../public/Kopon_transparent.png"
 import KoponLogo from "@/public/Kopon_transparent.png";
 import InstagramIcon from "@/public/icons/instagram.svg";
-import FaceBookIcon from "@/public/icons/facbook.svg";
+import FaceBookIcon from "@/public/icons/facebook1.svg";
 import YoutubeIcon from "@/public/icons/youtube-red.svg";
-import LinkedInIcom from "@/public/icons/linkedin.svg";
-import XIcon from "@/public/icons/twitterX.svg";
+import LinkedInIcon from "@/public/icons/linkedin.svg";
+import XIcon from "@/public/icons/twitter.svg";
 import {
   MenuIcon,
   IconCross2,
@@ -177,17 +177,17 @@ function layoutViews({ children }) {
               <li className="bg-pink-500 h-10 w-10">
                 <Image src={InstagramIcon} className="object-cover" />
               </li>
-              <li className="bg-pink-500 h-10 w-10">
-                <Image src={InstagramIcon} className="object-cover" />
+              <li className="bg-blue-500 h-10 w-10">
+                <Image src={FaceBookIcon} className="object-cover" />
               </li>
-              <li className="bg-pink-500 h-10 w-10">
-                <Image src={InstagramIcon} className="object-cover" />
+              <li className="bg-white h-10 w-10">
+                <Image src={YoutubeIcon} className="object-cover" />
               </li>
-              <li className="bg-pink-500 h-10 w-10">
-                <Image src={InstagramIcon} className="object-cover" />
+              <li className="bg-yellow-500 h-10 w-10">
+                <Image src={XIcon} className="object-cover" />
               </li>
-              <li className="bg-pink-500 h-10 w-10">
-                <Image src={InstagramIcon} className="object-cover" />
+              <li className="bg-white-500 h-10 w-10">
+                <Image src={LinkedInIcon} className="object-cover" />
               </li>
             </ul>
           </div>
