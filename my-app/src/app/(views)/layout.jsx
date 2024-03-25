@@ -175,23 +175,37 @@ function layoutViews({ children }) {
           <div className=" flex flex-row justify-around bg-green-400 min-h-[15%]">
             <ul className="flex ">
               <li className="text-center">Follow Us</li>
-              <li className="bg-pink-500 h-10 w-10">
-                <Image src={InstagramIcon} className="object-cover" />
+              <li className=" h-10 w-10 ">
+                <Image
+                  src={InstagramIcon}
+                  className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
+                />
               </li>
-              <li className="bg-blue-500 h-10 w-10">
-                <Image src={FaceBookIcon} className="object-cover" />
+              <li className=" h-10 w-10 ">
+                <Image
+                  src={FaceBookIcon}
+                  className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
+                />
               </li>
-              <li className="bg-white h-10 w-10">
-                <Image src={YoutubeIcon} className="object-cover" />
+              <li className=" h-10 w-10">
+                <Image
+                  src={YoutubeIcon}
+                  className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
+                />
               </li>
-              <li className="bg-yellow-500 h-10 w-10">
-                <Image src={XIcon} className="object-cover" />
+              <li className="h-10 w-10">
+                <Image
+                  src={XIcon}
+                  className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
+                />
               </li>
-              <li className="bg-white h-10 w-10">
-                <Image src={LinkedInIcon} className="object-cover" />
+              <li className="h-10 w-10">
+                <Image
+                  src={LinkedInIcon}
+                  className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
+                />
               </li>
             </ul>
-           
           </div>
         </footer>
       </div>
