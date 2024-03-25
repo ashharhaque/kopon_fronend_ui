@@ -145,35 +145,45 @@ function layoutViews({ children }) {
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3>Contact</h3>
               <ul className="">
-                <li className=" relative text-wrap">
+                <li className="flex flex-col text-wrap">
                   <span>
-                    <AdressIcon className=" inline-block h-[100%] absolute top-0 left-0" />
-                    Adress-saket,saidulajayab,westend marg,saket
+                    <AdressIcon className=" inline-block h-[100%]" />
+                  </span>
+                  <span>
+                    {" "}
+                    Adress-saket,saidulajayab,aafasdfafafasdfas,fewerwrwerqwer
                   </span>
                 </li>
-                <li className=" relative">
+                <li className="flex flex-col">
                   <span>
-                    <CallIcon className="inline-block h-[100%] absolute top-0 left-0" />
-                    Phone Number
+                    <CallIcon className="inline-block h-[100%] " />
+                  </span>
+                    
+                  <span>
+                  Phone Number
                   </span>
                 </li>
-                <li className=" relative">
+                <li className="flex flex-col ">
                   <span>
-                    <EmailIcon className="inline-block h-[100%] absolute top-0 left-0" />
-                    Email
+                    <EmailIcon className="inline-block h-[100%] " />
+                    
                   </span>
+                  <span>Email</span>
                 </li>
-                <li className=" relative">
+                <li className=" flex flex-col">
                   <span>
-                    <FaxMachine className=" inline-block h-[100%] absolute top-0 left-0" />
-                    Fax
+                    <FaxMachine className=" inline-block h-[100%] " />
+                    
                   </span>
+                  <span>Fax</span>
                 </li>
               </ul>
             </div>
           </div>
           <div className=" flex flex-col py-5 justify-around  min-h-[15%]">
-              <div className="text-center m-2 md:m-3 flex justify-center items-center">Follow Us</div>
+            <div className="text-center m-2 md:m-3 flex justify-center items-center">
+              Follow Us
+            </div>
 
             <ul className="flex flex-wrap justify-center">
               <li className=" h-10 w-10 m-2 md:m-3">
