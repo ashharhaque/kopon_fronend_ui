@@ -172,9 +172,10 @@ function layoutViews({ children }) {
               </ul>
             </div>
           </div>
-          <div className=" flex flex-row py-5 justify-around bg-green-400 min-h-[15%]">
+          <div className=" flex flex-col py-5 justify-around bg-green-400 min-h-[15%]">
+              <div className="text-center m-2 md:m-3 flex justify-center items-center">Follow Us</div>
+
             <ul className="flex flex-wrap justify-center">
-              <li className="text-center m-2 md:m-3 flex items-center">Follow Us</li>
               <li className=" h-10 w-10 m-2 md:m-3">
                 <Image
                   src={InstagramIcon}
