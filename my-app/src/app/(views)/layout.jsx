@@ -116,7 +116,7 @@ function layoutViews({ children }) {
         <div className="h-[200dvh]">{children}</div>
         <footer className="bg-yellow-300 flex flex-col min-h-[40dvh]">
           <div className="bg-blue-500 min-h-[85%] flex flex-col md:flex-row  justify-around ">
-            <div className="bg-red-500 p-3 text-center ">
+            <div className="bg-red-500 p-3 text-center basis-[20%] ">
               <h3 className="">Company Name</h3>
               <p className="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
