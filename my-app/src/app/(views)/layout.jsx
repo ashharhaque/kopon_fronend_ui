@@ -116,7 +116,7 @@ function layoutViews({ children }) {
         <div className="h-[200dvh]">{children}</div>
         <footer className="bg-yellow-300 flex flex-col min-h-[40dvh]">
           <div className="bg-blue-500 min-h-[85%] flex flex-col md:flex-row  justify-around ">
-            <div className="bg-red-500 p-3 text-center basis-[20%] ">
+            <div className="bg-red-500 p-3 flex flex-col gap-5 text-center basis-[20%] ">
               <h3 className="">Company Name</h3>
               <p className="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
@@ -124,8 +124,8 @@ function layoutViews({ children }) {
                 distinctio perspiciatis itaque perferendis laborum nesciunt!
               </p>
             </div>
-            <div className="bg-pink-300 p-3 text-center">
-              <h3>Products</h3>
+            <div className="bg-pink-300 flex flex-col gap-5 p-3 text-center">
+              <h3 className="">Products</h3>
               <ul>
                 <li>SMART PHONE</li>
                 <li>DESKTOP</li>
@@ -133,7 +133,7 @@ function layoutViews({ children }) {
                 <li>NETALS</li>
               </ul>
             </div>
-            <div className="bg-orange-400 p-3 text-center">
+            <div className="bg-orange-400 flex flex-col gap-5 p-3 text-center">
               <h3>Useful Link</h3>
               <ul>
                 <li>Your account</li>
@@ -142,7 +142,7 @@ function layoutViews({ children }) {
                 <li>Help</li>
               </ul>
             </div>
-            <div className="bg-teal-200 p-3 text-center">
+            <div className="bg-teal-200 flex flex-col gap-5 p-3 text-center">
               <h3>Contact</h3>
               <ul className="">
                 <li className="bg-white relative">
