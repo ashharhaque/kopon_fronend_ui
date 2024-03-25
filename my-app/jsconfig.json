@@ -3,9 +3,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/icons/*":["./src/app/_commonComponents/_icon/*"]
+      "@/icons/*":["./src/app/_commonComponents/_icon/*"],
+      "@/public/*":["./public/*"]
     }
-  }
+  },
+  "exclude": ["node_modules", ".next"]
 }
 
 

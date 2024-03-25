@@ -2,7 +2,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Logo from "./../../../public/logo.jpg";
-import KoponLogo from "./../../../public/Kopon_transparent.png"
+// import KoponLogo from "./../../../public/Kopon_transparent.png"
+import KoponLogo from "@/public/Kopon_transparent.png"
 import {MenuIcon,IconCross2} from "@/icons/svgicon"
 
 function layoutViews({ children }) {
