@@ -149,8 +149,7 @@ function layoutViews({ children }) {
                   <span>
                     <AdressIcon className=" inline-block h-[100%]" />
                   </span>
-                  <span>
-                    {" "}
+                  <span className="">
                     Adress-saket,saidulajayab,aafasdfafafasdfas,fewerwrwerqwer
                   </span>
                 </li>
