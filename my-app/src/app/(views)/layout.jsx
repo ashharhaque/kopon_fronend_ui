@@ -133,10 +133,10 @@ function layoutViews({ children }) {
             <div className="bg-teal-200 p-3 text-center">
             <h3>Contact</h3>
               <ul>
-                <li className="bg-yellow-600 relative"><span><AdressIcon className="bg-red-600 inline-block absolute top-0 left-0"/>Adress-saket,saidulajayab,westend marg,saket</span></li>
-                <li className="bg-zinc-200 relative"><span><CallIcon className="bg-pink-400 inline-block absolute top-0 left-0"/>Phone Number</span></li>
-                <li className="bg-orange-400 relative"><span><EmailIcon className="bg-yellow-500 inline-block absolute top-0 left-0"/>Email</span></li>
-                <li className="bg-pink-400 relative"><span><FaxMachine className="inline-block absolute top-0 left-0"/>Fax</span></li>
+                <li className="relative"><span><AdressIcon className="bg-red-600 inline-block absolute top-0 left-0"/>Adress-saket,saidulajayab,westend marg,saket</span></li>
+                <li className="relative"><span><CallIcon className="bg-pink-400 inline-block absolute top-0 left-0"/>Phone Number</span></li>
+                <li className="relative"><span><EmailIcon className="bg-yellow-500 inline-block absolute top-0 left-0"/>Email</span></li>
+                <li className="relative"><span><FaxMachine className="bg-blue-700 inline-block absolute top-0 left-0"/>Fax</span></li>
               </ul>
             </div>
           </div>
