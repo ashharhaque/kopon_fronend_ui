@@ -173,33 +173,33 @@ function layoutViews({ children }) {
             </div>
           </div>
           <div className=" flex flex-row py-5 justify-around bg-green-400 min-h-[15%]">
-            <ul className="flex">
-              <li className="text-center m-5 flex items-center">Follow Us</li>
-              <li className=" h-10 w-10 m-5">
+            <ul className="flex ">
+              <li className="text-center m-2 md:m-3 flex items-center">Follow Us</li>
+              <li className=" h-10 w-10 m-2 md:m-3">
                 <Image
                   src={InstagramIcon}
                   className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
                 />
               </li>
-              <li className=" h-10 w-10 m-5 ">
+              <li className=" h-10 w-10 m-2 md:m-3 ">
                 <Image
                   src={FaceBookIcon}
                   className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
                 />
               </li>
-              <li className=" h-10 w-10 m-5">
+              <li className=" h-10 w-10 m-2 md:m-3">
                 <Image
                   src={YoutubeIcon}
                   className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
                 />
               </li>
-              <li className="h-10 w-10 m-5">
+              <li className="h-10 w-10 m-2 md:m-3">
                 <Image
                   src={XIcon}
                   className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
                 />
               </li>
-              <li className="h-10 w-10 m-5">
+              <li className="h-10 w-10 m-2 md:m-3">
                 <Image
                   src={LinkedInIcon}
                   className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
