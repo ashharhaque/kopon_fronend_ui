@@ -140,7 +140,8 @@ function layoutViews({ children }) {
               </ul>
             </div>
           </div>
-          <div className="bg-green-400 h-[15%]">b</div>
+          <div className="bg-green-400">b</div>
+          <div className="bg-blue-400">new box added</div>
         </footer>
       </div>
     </>
