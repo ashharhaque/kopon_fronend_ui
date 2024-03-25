@@ -116,7 +116,7 @@ function layoutViews({ children }) {
         <div className="h-[200dvh]">{children}</div>
         <footer className="bg-yellow-300 flex flex-col min-h-[40dvh]">
           <div className="bg-blue-500 min-h-[85%] flex flex-col md:flex-row  justify-around ">
-            <div className="bg-red-500 p-3 text-center">
+            <div className="bg-red-500 p-3 text-center ">
               <h3 className="">Company Name</h3>
               <p className="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
@@ -172,34 +172,34 @@ function layoutViews({ children }) {
               </ul>
             </div>
           </div>
-          <div className=" flex flex-row justify-around bg-green-400 min-h-[15%]">
-            <ul className="flex ">
-              <li className="text-center">Follow Us</li>
-              <li className=" h-10 w-10 ">
+          <div className=" flex flex-row py-5 justify-around bg-green-400 min-h-[15%]">
+            <ul className="flex">
+              <li className="text-center m-5 flex items-center">Follow Us</li>
+              <li className=" h-10 w-10 m-5">
                 <Image
                   src={InstagramIcon}
                   className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
                 />
               </li>
-              <li className=" h-10 w-10 ">
+              <li className=" h-10 w-10 m-5 ">
                 <Image
                   src={FaceBookIcon}
                   className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
                 />
               </li>
-              <li className=" h-10 w-10">
+              <li className=" h-10 w-10 m-5">
                 <Image
                   src={YoutubeIcon}
                   className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
                 />
               </li>
-              <li className="h-10 w-10">
+              <li className="h-10 w-10 m-5">
                 <Image
                   src={XIcon}
                   className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
                 />
               </li>
-              <li className="h-10 w-10">
+              <li className="h-10 w-10 m-5">
                 <Image
                   src={LinkedInIcon}
                   className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
