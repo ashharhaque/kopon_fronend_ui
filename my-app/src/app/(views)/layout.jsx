@@ -2,8 +2,8 @@
 import { useState } from "react";
 import Image from "next/image";
 // import KoponLogo from "./../../../public/Kopon_transparent.png"
-import KoponLogo from "@/public/Kopon_transparent.png"
-import {MenuIcon,IconCross2} from "@/icons/svgicon"
+import KoponLogo from "@/public/Kopon_transparent.png";
+import { MenuIcon, IconCross2 } from "@/icons/svgicon";
 
 function layoutViews({ children }) {
   const [menuToggleOpen, setMenuToggleOpen] = useState(false);
@@ -101,8 +101,46 @@ function layoutViews({ children }) {
               <MenuIcon className={`transition-all delay-150 ease-in-out ${!menuToggleOpen?"hidden":"visible"}`} /> */}
           </div>
         </header>
-        <div className="">{children}</div>
-        <footer className="">footer</footer>
+        <div className="h-[200dvh]">{children}</div>
+        <footer className="bg-yellow-300 flex flex-col h-[40dvh] ">
+          <div className="bg-blue-500 h-[85%] flex flex-row  justify-around">
+            <div className="bg-red-500 basis-[20%]">
+              <h3>Company Name</h3>
+              <p className="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                iste reiciendis expedita unde tenetur impedit, culpa officiis,
+                distinctio perspiciatis itaque perferendis laborum nesciunt!
+              </p>
+            </div>
+            <div className="bg-orange-300">
+              <h3>Products</h3>
+              <ul>
+                <li>SMART PHONE</li>
+                <li>DESKTOP</li>
+                <li>RANDMO TEXT</li>
+                <li>NETALS</li>
+              </ul>
+            </div>
+            <div className="bg-green-500">
+              <h3>Useful Link</h3>
+              <ul>
+                <li>Your account</li>
+                <li>Become Affiliate</li>
+                <li>Shipping Rate</li>
+                <li>Help</li>
+              </ul>
+            </div>
+            <div className="bg-fuchsia-400">
+              <h3>Company Name</h3>
+              <p className="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                iste reiciendis expedita unde tenetur impedit, culpa officiis,
+                distinctio perspiciatis itaque perferendis laborum nesciunt!
+              </p>
+            </div>
+          </div>
+          <div className="bg-green-400 h-[15%]">b</div>
+        </footer>
       </div>
     </>
   );
