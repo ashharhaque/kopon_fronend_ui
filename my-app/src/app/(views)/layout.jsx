@@ -46,49 +46,55 @@ function layoutViews({ children }) {
             }`}
           >
             <span
-              className={`transition-all ease-in-out delay-75 ${
+              className={`group/underline transition-all ease-in-out delay-75 ${
                 menuToggleOpen
                   ? "-translate-y-3 md:translate-y-0"
                   : "-translate-y-full invisible"
               }md:transition-none md:translate-y-0`}
             >
               ABOUT US
+              <p className="underline-custom"></p>
             </span>
+            
             <span
-              className={`transition-all ease-in-out delay-100 ${
+              className={`group/underline transition-all ease-in-out delay-100 ${
                 menuToggleOpen
                   ? "-translate-y-3 "
                   : "-translate-y-full invisible"
               }md:transition-none md:translate-y-0`}
             >
               FEATURES
+              <p className="underline-custom"></p>
             </span>
             <span
-              className={` transition-all ease-in-out delay-150 ${
+              className={`group/underline transition-all ease-in-out delay-150 ${
                 menuToggleOpen
                   ? "-translate-y-3 "
                   : "-translate-y-full invisible"
               }md:transition-none md:translate-y-0`}
             >
               TESTIMONIALS
+              <p className="underline-custom"></p>
             </span>
             <span
-              className={`transition-all ease-in-out delay-200 ${
+              className={`group/underline transition-all ease-in-out delay-200 ${
                 menuToggleOpen
                   ? "-translate-y-3 "
                   : "-translate-y-full invisible"
               }md:transition-none md:translate-y-0`}
             >
               HOME
+              <p className="underline-custom"></p>
             </span>
             <span
-              className={`transition-all ease-in-out delay-300 ${
+              className={`group/underline transition-all ease-in-out delay-300 ${
                 menuToggleOpen
                   ? "-translate-y-3 "
                   : "-translate-y-full invisible"
               }md:transition-none md:translate-y-0`}
             >
               BLOG
+              <p className="underline-custom"></p>
             </span>
           </nav>
           <div
