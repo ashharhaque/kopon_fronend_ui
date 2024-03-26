@@ -129,29 +129,41 @@ function layoutViews({ children }) {
               <ul>
                 <li className=" group/underline">
                   <span>SMART PHONE</span>
-                  <p className="bg-red-400 h-[3px]  transform scale-x-0 transition-all ease-in-out duration-300 group-hover/underline:scale-x-100"></p>
+                  <p className="underline-custom"></p>
                 </li>
                 <li className="group/underline">
                   <span>DESKTOP</span>
-                  <p className="bg-red-400 h-[3px] border-r-2  scale-x-0 transition-all ease-in-out duration-300 group-hover/underline:scale-x-100"></p>
+                  <p className="underline-custom"></p>
                 </li>
                 <li className="group/underline">
                   <span>RANDMO TEXT</span>
                   <p className="underline-custom"></p>
                 </li>
-                <li>
+                <li className="group/underline">
                   <span>NETALS</span>
-                  <p></p>
+                  <p className="underline-custom"></p>
                 </li>
               </ul>
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3>Useful Link</h3>
               <ul>
-                <li>Your account</li>
-                <li>Become Affiliate</li>
-                <li>Shipping Rate</li>
-                <li>Help</li>
+                <li className="group/underline">
+                  <span>Your account</span>
+                  <p className="underline-custom"></p>
+                </li>
+                <li className="group/underline">
+                  <span>Become Affiliate</span>
+                  <p className="underline-custom"></p>
+                </li>
+                <li className="group/underline">
+                  <span>Shipping Rate</span>
+                  <p className="underline-custom"></p>
+                </li>
+                <li className="group/underline">
+                  <span>Help</span>
+                  <p className="underline-custom"></p>
+                </li>
               </ul>
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
