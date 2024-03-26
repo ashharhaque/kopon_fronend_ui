@@ -5,13 +5,21 @@ import DelieveryPartnerImage from "@/public/delieveryPartnerTransparent.png";
 import FastFoodImage from "@/public/fastFoodsTransparent.png";
 import PeopleFoodImage from "@/public/peopleFoodTransparent.png";
 function LandingPage() {
-    window.addEventListener("scroll",(event)=>{
-        console.log("sss new--->",event)
-      })
+    
+  useEffect(()=>{
+    if(window){
+        window.addEventListener("scroll",(event)=>{
+            const element=window.document.getElementById("article");
+            element.className="bg-pink-400 basis-[40%] text-center flex items-center trasition-all translate-x-0";
+            console.log("sss new--->",element);
+          });
+         
+    }
+  })
   return (
     <>
-      <div className="bg-yellow-300 md:flex justify-around relative m-10">
-        <article className="bg-pink-400 basis-[40%] text-center flex items-center">
+      <div className="bg-yellow-300 md:flex justify-around relative m-10 ">
+        <article id="article"className="bg-pink-400 basis-[40%] text-center flex items-center trasition-all -translate-x-[200%]">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
