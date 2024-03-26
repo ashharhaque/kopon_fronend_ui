@@ -55,7 +55,7 @@ function layoutViews({ children }) {
               ABOUT US
               <p className="underline-custom"></p>
             </span>
-            
+
             <span
               className={`group/underline transition-all ease-in-out delay-100 ${
                 menuToggleOpen
@@ -145,32 +145,46 @@ function layoutViews({ children }) {
                   <span>RANDMO TEXT</span>
                   <p className="underline-custom"></p>
                 </li>
-                <li className="group/underline">
-                  <span>NETALS</span>
-                  <p className="underline-custom"></p>
+                <li>
+                  <span className="group/underline">
+                    NETALS
+                    <p className="underline-custom"></p>
+                  </span>
                 </li>
               </ul>
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3>Useful Link</h3>
-              <ul>
-                <li className="group/underline">
-                  <span>Your account</span>
+              <ul className="">
+                <li className="">
+                  <span className="group/underline inline-block">Your account
                   <p className="underline-custom"></p>
+                  </span>
+                  
                 </li>
-                <li className="group/underline">
-                  <span>Become Affiliate</span>
+                <li className="">
+                  <span className="group/underline inline-block ">Become Affiliate
                   <p className="underline-custom"></p>
+                  </span>
+                  
                 </li>
-                <li className="group/underline">
-                  <span>Shipping Rate</span>
+                <li className="">
+                  <span className="group/underline inline-block ">Shipping Rate
                   <p className="underline-custom"></p>
+                  </span>
+                  
                 </li>
-                <li className="group/underline">
-                  <span>Help</span>
-                  <p className="underline-custom"></p>
+                <li className="">
+                <span className="group/underline inline-block ">
+                Help
+              <p className="underline-custom "></p>
+
+                </span>
+             
                 </li>
               </ul>
+            
+                  
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3>Contact</h3>
