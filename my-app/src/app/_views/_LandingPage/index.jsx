@@ -25,8 +25,8 @@ function LandingPage() {
         </div>
       </div>
       <div className="bg-yellow-300 md:flex md:flex-row-reverse justify-around relative m-10">
-      <article className="bg-pink-400 basis-[40%] text-center flex items-center">
-          <p>
+      <article className="bg-pink-400 basis-[40%] text-center flex items-center ">
+          <p className="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
             doloremque quas dignissimos, quasi beatae sunt earum inventore.
