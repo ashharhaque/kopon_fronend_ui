@@ -3,7 +3,7 @@ import DelieveryPartnerImage from "@/public/delieveryPartnerTransparent.png";
 function LandingPage() {
   return (
     <>
-      <div className="bg-yellow-300 md:flex  relative">
+      <div className="bg-yellow-300 md:flex justify-around relative">
         <article className="bg-pink-400 basis-[40%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
           accusamus quos qui magni facilis quam ex quod numquam tenetur
