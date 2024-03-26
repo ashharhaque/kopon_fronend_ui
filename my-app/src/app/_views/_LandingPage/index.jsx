@@ -14,10 +14,10 @@ function LandingPage() {
           aliquid accusantium doloribus ullam ut vero? Reprehenderit, recusandae
           sit
         </article>
-        <div className="relative">
+        <div className="relative  ">
         <Image
           src={DelieveryPartnerImage}
-          className="bg-red-500 min-h-[100%] w-[100%] object-contain md:h-[30%]"
+          className="bg-red-500 object-contain min-h-[100%] w-[100%] md:h-[30%]"
         />
         </div>
         
