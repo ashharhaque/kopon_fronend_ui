@@ -1,8 +1,13 @@
+"use client"
+import { useEffect,useState } from "react";
 import Image from "next/image";
 import DelieveryPartnerImage from "@/public/delieveryPartnerTransparent.png";
 import FastFoodImage from "@/public/fastFoodsTransparent.png";
 import PeopleFoodImage from "@/public/peopleFoodTransparent.png";
 function LandingPage() {
+    window.addEventListener("scroll",(event)=>{
+        console.log("sss new--->",event)
+      })
   return (
     <>
       <div className="bg-yellow-300 md:flex justify-around relative m-10">

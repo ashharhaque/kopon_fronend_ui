@@ -19,9 +19,14 @@ import {
 
 function layoutViews({ children }) {
   const [menuToggleOpen, setMenuToggleOpen] = useState(false);
+  let x=0;
+  const scrollFunction=()=>{
+    console.log("scroll---->",x+1)
+  }
+
   return (
     <>
-      <div className="flex flex-col bg-white  min-h-dvh justify-between ">
+      <div onScroll={()=>scrollFunction()} id="#mainDiv"className="flex flex-col bg-white  min-h-dvh justify-between ">
         <header className="bg-green-500 flex flex-row justify-around h-[10dvh] relative ">
           <Image
             // src={Logo}
