@@ -1,12 +1,10 @@
 import Image from "next/image";
-import CouponImage from "@/public/coupon_image_transparent.png";
+import DelieveryPartnerImage from "@/public/delieveryPartnerTransparent.png";
 function LandingPage() {
   return (
     <>
-    <div className="bg-yellow-300 h-[40dvh] w-[100%] relative">
-        <Image src={CouponImage} style={{
-            "objectFit":"cover"
-        }} className="bg-red-500"/>
+    <div className="bg-yellow-300  relative">
+        <Image src={DelieveryPartnerImage}  className="bg-red-500 h-[50%] w-[100%] object-contain "/>
     </div>
     </>
   )
