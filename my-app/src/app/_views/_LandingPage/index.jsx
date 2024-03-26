@@ -62,7 +62,7 @@ function LandingPage() {
         <div className="relative  ">
           <Image
             src={PeopleFoodImage}
-            className="bg-red-500 object-contain min-h-[100%] w-[100%] md:h-[30%]"
+            className="bg-red-500 object-contain min-h-[100%] w-[100%] md:h-[30%] "
           />
         </div>
       </div>
