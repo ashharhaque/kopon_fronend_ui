@@ -145,12 +145,12 @@ function layoutViews({ children }) {
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3>Contact</h3>
               <ul className="">
-                <li className="flex flex-col ">
+                <li className="flex flex-col text-wrap">
                   <span>
                     <AdressIcon className=" inline-block h-[100%]" />
                   </span>
                   <span className="text-wrap whitespace-normal break-words">
-                    Adress-saket,saidulajayab,aafasdfafafasdfas,fewerwrwerqwer
+                    Adress-saket,saidulajayab,aafasdfafafasdfas,fewerwrwerqweraa
                   </span>
                 </li>
                 <li className="flex flex-col">
