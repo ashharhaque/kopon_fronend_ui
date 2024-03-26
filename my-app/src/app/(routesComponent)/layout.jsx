@@ -119,7 +119,7 @@ function layoutViews({ children }) {
               <MenuIcon className={`transition-all delay-150 ease-in-out ${!menuToggleOpen?"hidden":"visible"}`} /> */}
           </div>
         </header>
-        <div className="bg-blue-400 min-h-[200dvh] max-w-[100dvw]">{children}</div>
+        <div className="bg-blue-400  max-w-[100dvw]">{children}</div>
         <footer className="bg-pink-700 flex flex-col min-h-[40dvh]">
           <div className="min-h-[85%] flex flex-col md:flex-row  justify-around ">
             <div className=" p-3 flex flex-col gap-5 text-center basis-[20%] ">
