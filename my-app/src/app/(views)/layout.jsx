@@ -133,20 +133,26 @@ function layoutViews({ children }) {
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3 className="">Products</h3>
               <ul>
-                <li className=" group/underline">
-                  <span>SMART PHONE</span>
+                <li className=" ">
+                  <span className="group/underline inline-block">SMART PHONE
                   <p className="underline-custom"></p>
+                  </span>
+                 
                 </li>
-                <li className="group/underline">
-                  <span>DESKTOP</span>
+                <li className="">
+                  <span className="group/underline inline-block">DESKTOP
                   <p className="underline-custom"></p>
+                  </span>
+                  
                 </li>
-                <li className="group/underline">
-                  <span>RANDMO TEXT</span>
+                <li className="">
+                  <span className="group/underline inline-block">RANDMO TEXT
                   <p className="underline-custom"></p>
+                  </span>
+                  
                 </li>
                 <li>
-                  <span className="group/underline">
+                  <span className="group/underline inline-block">
                     NETALS
                     <p className="underline-custom"></p>
                   </span>
