@@ -22,7 +22,7 @@ function layoutViews({ children }) {
   return (
     <>
       <div className="flex flex-col bg-white  min-h-dvh justify-between ">
-        <header className="flex flex-row justify-around h-[10dvh] relative ">
+        <header className="bg-green-500 flex flex-row justify-around h-[10dvh] relative ">
           <Image
             // src={Logo}
             // src={"/logo.jpg"}
@@ -120,7 +120,7 @@ function layoutViews({ children }) {
           </div>
         </header>
         <div className="h-[200dvh]">{children}</div>
-        <footer className="flex flex-col min-h-[40dvh]">
+        <footer className="bg-pink-700 flex flex-col min-h-[40dvh]">
           <div className="min-h-[85%] flex flex-col md:flex-row  justify-around ">
             <div className=" p-3 flex flex-col gap-5 text-center basis-[20%] ">
               <h3 className="">Company Name</h3>
