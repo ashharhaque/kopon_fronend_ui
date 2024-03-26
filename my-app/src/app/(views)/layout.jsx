@@ -21,7 +21,7 @@ function layoutViews({ children }) {
   const [menuToggleOpen, setMenuToggleOpen] = useState(false);
   return (
     <>
-      <div className="flex flex-col bg-gradient-to-b from-emerald-50 to-emerald-100   min-h-dvh justify-between ">
+      <div className="flex flex-col bg-white  min-h-dvh justify-between ">
         <header className="flex flex-row justify-around h-[10dvh] relative ">
           <Image
             // src={Logo}
@@ -208,31 +208,31 @@ function layoutViews({ children }) {
               <li className=" h-10 w-10 m-2 md:m-3">
                 <Image
                   src={InstagramIcon}
-                  className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
+                  className="object-cover  transition-all ease-in-out duration-75  hover:-translate-y-3"
                 />
               </li>
               <li className=" h-10 w-10 m-2 md:m-3 ">
                 <Image
                   src={FaceBookIcon}
-                  className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
+                  className="object-cover transition-all ease-in-out duration-75  hover:-translate-y-3"
                 />
               </li>
               <li className=" h-10 w-10 m-2 md:m-3">
                 <Image
                   src={YoutubeIcon}
-                  className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
+                  className="object-cover  transition-all ease-in-out duration-75  hover:-translate-y-3"
                 />
               </li>
               <li className="h-10 w-10 m-2 md:m-3">
                 <Image
                   src={XIcon}
-                  className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
+                  className="object-cover  transition-all ease-in-out duration-75  hover:-translate-y-3"
                 />
               </li>
               <li className="h-10 w-10 m-2 md:m-3">
                 <Image
                   src={LinkedInIcon}
-                  className="object-cover grayscale-[60%] transition-all ease-in-out duration-75 hover:grayscale-0 hover:-translate-y-3"
+                  className="object-cover  transition-all ease-in-out duration-75 hover:-translate-y-3"
                 />
               </li>
             </ul>
