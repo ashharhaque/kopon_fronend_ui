@@ -127,7 +127,10 @@ function layoutViews({ children }) {
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3 className="">Products</h3>
               <ul>
-                <li>SMART PHONE</li>
+                <li className="bg-red-600 group/item">
+                  <span>SMART PHONE</span>
+                  <p className="bg-red-400 h-2 w-[10%] group-hover/item:w-[100%]"></p>
+                </li>
                 <li>DESKTOP</li>
                 <li>RANDMO TEXT</li>
                 <li>NETALS</li>
