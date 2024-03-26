@@ -129,15 +129,20 @@ function layoutViews({ children }) {
               <ul>
                 <li className="bg-red-600 group/item">
                   <span>SMART PHONE</span>
-                  <p className="bg-red-400 h-[5px] w-[100%] transform scale-x-0 transition-all ease-in-out duration-300 group-hover/item:scale-x-100"></p>
+                  <p className="bg-red-400 h-[3px] w-[100%] transform scale-x-0 transition-all ease-in-out duration-300 group-hover/item:scale-x-100"></p>
                 </li>
-                {/* <li className="bg-red-600 group">
-                  <span>SMART PHONE</span>
-                  <p className="bg-red-400 h-2 w-[10%] origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform"></p>
-                </li> */}
-                <li>DESKTOP</li>
-                <li>RANDMO TEXT</li>
-                <li>NETALS</li>
+                <li>
+                  <span>DESKTOP</span>
+                  <p></p>
+                </li>
+                <li>
+                  <span>RANDMO TEXT</span>
+                  <p></p>
+                </li>
+                <li>
+                  <span>NETALS</span>
+                  <p></p>
+                </li>
               </ul>
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
