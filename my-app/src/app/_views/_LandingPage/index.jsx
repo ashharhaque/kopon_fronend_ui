@@ -4,7 +4,7 @@ import DelieveryPartnerImage from "@/public/delieveryPartnerTransparent.png";
 import FastFoodImage from "@/public/fastFoodsTransparent.png";
 import PeopleFoodImage from "@/public/peopleFoodTransparent.png";
 // import CarVideo from "/carVideo.mp4"
-import CarVideo from "/public/sample_video.mp4"
+// import CarVideo from "/public/sample_video.mp4"
 import Carousel from "@/app/_commonComponents/_ui/carousel";
 function LandingPage() {
   return (
@@ -71,8 +71,8 @@ function LandingPage() {
         </div>
       </div>
         <Carousel className="bg-green-400 min-h[min-content] w-full" 
-        // src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage]}
-        src={[CarVideo]}
+        src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage,"/carVideo.mp4" ]}
+        // src={[CarVideo]}
         />
     </>
   );

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 function Carousel({ className, src }) {
   const [currentSrc, setCurrentSrc] = useState(src[0]);
+  const [isVideoPlaying,setIsVideoPlaying]=useState(false);
   console.log("src----->",src)
   useEffect(() => {
     let count = 0;
@@ -14,7 +15,11 @@ function Carousel({ className, src }) {
         setCurrentSrc(src[count % src.length]);
         count++;
         if (count >= src.length) {
+            setIsVideoPlaying(true)
           count = 0;
+        }else{
+            setIsVideoPlaying(false)
+
         }
       } catch (err) {
         console.log("err in srcSlider---->", err);
@@ -27,17 +32,17 @@ function Carousel({ className, src }) {
   }, []);
   return (
     <div className={`${className}]`}>
-      {/* <Image
+     { !isVideoPlaying && <Image
             // src={src[0]}
             src={currentSrc}
 
             className="bg-yellow-400 object-cover"
-        /> */}
-      <video autoPlay muted width="250">
-        <source src={src[0]}  />
-        {/* <source src="/carVideo.mp4"  /> */}
+        />}
+      {isVideoPlaying && <video autoPlay muted >
+        {/* <source src={src[0]}  /> */}
+        <source src="/carVideo.mp4"  />
 
-      </video>
+      </video>}
     </div>
   );
 }
