@@ -7,9 +7,9 @@ function Carousel({className,src}) {
         let count=0
         const srcSlider=()=>{
             try{
-                console.log("inside srcSlider count--->",count);
-                console.log("src length---->",src.length);
-                console.log("src on particular count----->",count%src.length);
+                // console.log("inside srcSlider count--->",count);
+                // console.log("src length---->",src.length);
+                // console.log("src on particular count----->",count%src.length);
                 setCurrentSrc(src[count%src.length])
                 count++
                 if(count>=src.length){
