@@ -2,6 +2,7 @@ import Image from "next/image";
 import DelieveryPartnerImage from "@/public/delieveryPartnerTransparent.png";
 import FastFoodImage from "@/public/fastFoodsTransparent.png";
 import PeopleFoodImage from "@/public/peopleFoodTransparent.png";
+import Carousel from "@/app/_commonComponents/_ui/carousel";
 function LandingPage() {
   return (
     <>
@@ -65,6 +66,9 @@ function LandingPage() {
             className="bg-red-500 object-contain min-h-[100%] w-[100%] md:h-[30%] "
           />
         </div>
+      </div>
+      <div>
+        <Carousel/>
       </div>
     </>
   );
