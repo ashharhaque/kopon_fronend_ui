@@ -11,7 +11,10 @@ function Carousel({className,src}) {
                 console.log("src length---->",src.length);
                 console.log("src on particular count----->",count%src.length);
                 setCurrentSrc(src[count%src.length])
-                count++;
+                count++
+                if(count>=src.length){
+                    count=0
+                }
             }catch(err){
                 console.log("err in srcSlider---->",err)
             }
@@ -27,7 +30,7 @@ function Carousel({className,src}) {
             // src={src[0]}
             src={currentSrc}
 
-            className="w-[100%] bg-yellow-400 object-cover"
+            className="bg-yellow-400 object-cover"
         />
     </div>
   )
