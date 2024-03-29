@@ -70,7 +70,7 @@ function LandingPage() {
           />
         </div>
       </div>
-        <Carousel className="bg-green-400 min-h[min-content] w-full" 
+        <Carousel className="bg-green-400 min-h[min-content] w-full flex justify-center" 
         src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage,"/carVideo.mp4" ]}
         // src={[CarVideo]}
         />

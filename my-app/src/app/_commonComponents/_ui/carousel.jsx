@@ -31,14 +31,14 @@ function Carousel({ className, src }) {
     };
   }, []);
   return (
-    <div className={`${className}]`}>
+    <div className={`${className}`}>
      { !isVideoPlaying && <Image
             // src={src[0]}
             src={currentSrc}
 
-            className="bg-yellow-400 object-cover"
+            className="bg-yellow-400 object-cover h-[30%] w-[30%]"
         />}
-      {isVideoPlaying && <video autoPlay muted >
+      {isVideoPlaying && <video autoPlay muted  className="">
         {/* <source src={src[0]}  /> */}
         <source src="/carVideo.mp4"  />
 
