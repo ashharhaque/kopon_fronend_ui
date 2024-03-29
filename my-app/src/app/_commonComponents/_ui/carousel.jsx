@@ -3,49 +3,51 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 function Carousel({ className, src, ImageWidth, ImageHeight }) {
   const [currentSrc, setCurrentSrc] = useState(src[0]);
-  const [transitionstart,setTransitionStart]=useState(false);
+  const [transitionstart,setTransitionStart]=useState(0);
   console.log("src----->", src);
-  //   useEffect(() => {
-  //     let count = 0;
-  //     const srcSlider = () => {
-  //       try {
-  //         setCurrentSrc(src[count % src.length]);
-  //         count++;
-  //         if (count >= src.length) {
-  //           if (src[count % src.length]) count = 0;
-  //         }
-  //       } catch (err) {
-  //         console.log("err in srcSlider---->", err);
-  //       }
-  //     };
-  //     const intervalID = setInterval(srcSlider, 3000);
-  //     return () => {
-  //       clearInterval(intervalID);
-  //     };
-  //   }, []);
-
-  useEffect(() => {
-    let count = 0;
-    const slider=()=>{
-        try{
-            if(count==0){
-                setTransitionStart(false);
-                count++;
-            }
-            else{
-                count=0;
-                setTransitionStart(true);
-            }
-
-        }catch(err){
-            console.log("err in slider---->",err)
+    useEffect(() => {
+      let count = 0;
+      const srcSlider = () => {
+        try {
+          setCurrentSrc(src[count % src.length]);
+          count++;
+          if (count >= src.length) {
+            count=0
+          }
+          setTransitionStart(count)
+        } catch (err) {
+          console.log("err in srcSlider---->", err);
         }
-    }
-    const intervalID = setInterval(slider, 3000);
-    return () => {
-      clearInterval(intervalID);
-    };
-  }, []);
+      };
+      const intervalID = setInterval(srcSlider, 3000);
+      return () => {
+        clearInterval(intervalID);
+      };
+    }, []);
+
+//   useEffect(() => {
+//     let count = 0;
+//     const slider=()=>{
+//         try{
+//             if(count==0){
+               
+//                 count++;
+//                 setTransitionStart(false);
+//             }
+//             else{
+//                 count=0;
+//                 setTransitionStart(true);
+//             }
+
+//         }catch(err){
+//             console.log("err in slider---->",err)
+//         }
+//     }
+//     const intervalID = setInterval(slider, 3000);
+//     return () => {
+//       clearInterval(intervalID);
+//     };
+//   }, []);
   //   return (
   //     <div className={`${className} `}>
 
@@ -59,11 +61,23 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
 
   //   );
   return (
-    <div className="flex justify-center">
+    <div className="bg-yellow-500 flex justify-center  w-[50%] h-[100%] relative">
       <Image
         src={src[0]}
-        className={`bg-red-500 translate-x-[0px] transition-all ease-in-out delay-300 duration-1000  ${transitionstart?"translate-x-0":"translate-x-[100px]"}`}
+        // fill
+        className={`bg-red-500 absolute object-contain translate-x-[0px] opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000  ${transitionstart==0?"translate-x-0 opacity-100 scale-100":"translate-x-[200%] opacity-0 scale-0"}`}
       />
+      <Image
+        src={src[1]}
+        // fill
+        className={`bg-red-500 absolute object-contain translate-x-[0px] opacity-100 scale-100   transition-all ease-in-out delay-300 duration-1000  ${transitionstart==1?"translate-x-0 opacity-100 scale-100":"translate-x-[200%] opacity-0 scale-0"}`}
+      />
+      <Image
+        src={src[2]}
+        // fill
+        className={`bg-red-500  object-contain translate-x-[0px] opacity-100 scale-100   transition-all ease-in-out delay-300 duration-1000  ${transitionstart==2?"translate-x-0 opacity-100 scale-100":"translate-x-[200%] opacity-0 scale-0"}`}
+      />
+
     </div>
   );
 }

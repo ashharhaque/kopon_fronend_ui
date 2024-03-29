@@ -70,13 +70,16 @@ function LandingPage() {
           />
         </div>
       </div>
-        <Carousel className=" min-h[min-content] w-full flex justify-center" 
+      <div className="flex justify-center">
+      <Carousel className=" min-h[min-content] w-full flex justify-center" 
         src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage]}
         ImageWidth={"100%"}
         ImageHeight={"60vh"}
         
         // src={[CarVideo]}
         />
+      </div>
+        
     </>
   );
 }
