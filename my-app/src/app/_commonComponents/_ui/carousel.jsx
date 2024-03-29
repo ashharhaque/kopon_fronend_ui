@@ -1,6 +1,8 @@
-function Carousel() {
+"use client"
+import { useState,useEffect } from "react"
+function Carousel({className,src}) {
   return (
-    <div>Carousel</div>
+    <div className={`${className} `}>Carousel</div>
   )
 }
 

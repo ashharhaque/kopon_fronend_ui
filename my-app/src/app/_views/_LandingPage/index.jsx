@@ -67,9 +67,7 @@ function LandingPage() {
           />
         </div>
       </div>
-      <div>
-        <Carousel/>
-      </div>
+        <Carousel className="bg-green-400 min-h[min-content] w-full" src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage]}/>
     </>
   );
 }
