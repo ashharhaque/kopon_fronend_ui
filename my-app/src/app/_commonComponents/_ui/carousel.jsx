@@ -15,6 +15,7 @@ function Carousel({ className, src }) {
         setCurrentSrc(src[count % src.length]);
         count++;
         if (count >= src.length) {
+            if(src[count % src.length])
             setIsVideoPlaying(true)
           count = 0;
         }else{
@@ -31,14 +32,14 @@ function Carousel({ className, src }) {
     };
   }, []);
   return (
-    <div className={`${className}`}>
+    <div className={`${className} `}>
      { !isVideoPlaying && <Image
             // src={src[0]}
             src={currentSrc}
 
-            className="bg-yellow-400 object-cover h-[30%] w-[30%]"
+            className="object-contain h-[60vh] w-[100vh]"
         />}
-      {isVideoPlaying && <video autoPlay muted  className="">
+      {isVideoPlaying && <video autoPlay muted  className="  h-[60vh] w-[100vh]">
         {/* <source src={src[0]}  /> */}
         <source src="/carVideo.mp4"  />
 
