@@ -111,20 +111,20 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
 //     </div>
 //   );
 //0,1,2//total 3 rounds(length of image array)
-//0--starting at 00%//transitionStart==0
-//1--add 100% to each//tranisitionStart=1
-//2--subract -200% from first and add 100% to remaing 2//transitionstart=2
+//0//transition start=0//add 0% to each and 300% to third child(first child view)
+//1//tranisitionStart=1//add 100% to each and subtract 200% from third child (second child view)
+//2//transitionstart=2//add 100% to remaing 2 and subract -200% from first and //(third child view)
 //3--(again start the values) and reset to 00%//add 100% to each and subtract 200% from second//transitionstart=3
 //4//transitionTime=4//add 100% to each and subtract 200% from third
 //5//transitionTime=5//add 100% to each and subtract 200% from first
 //6//transitionTime=6//add 100% to each and subtract 200% from second child
 return (
     <div className="bg-violet-500 w-[80%] h-[60vh] flex  overflow-visible">
-      <div className={`bg-green-500 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${transitionstart==0?"0":""}%]`}>
+      <div className={`bg-green-500 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[-100%]`}>
         asfadfaf
       </div>
-      <div className={`bg-yellow-400 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${transitionstart==0?"0":""}%]`}>ddddd</div>
-      <div className={`bg-red-500 min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[${transitionstart==0?"0":""}%]`}>eeee</div>
+      <div className={`bg-yellow-400 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[200%]`}>ddddd</div>
+      <div className={`bg-red-500 min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[200%]`}>eeee</div>
     </div>
   );
 }
