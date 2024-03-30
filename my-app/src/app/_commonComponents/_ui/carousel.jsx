@@ -79,51 +79,53 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
 //1--add 100% to each
 //2--subract -200% from first and add 100% to remaing 2
 //3--(again start the values) and reset to 00%
-return (
-    <div className=" w-[80%] h-[60vh] flex  overflow-hidden">
-      <div className={` min-w-[100%] h-[100%] transition-all ease-in-out duration-1000  -translate-x-[${src.length-1==transitionstart?(transitionstart-1)*(-1*100):transitionstart==0?"00":transitionstart*100}%] ${transitionstart==0?"opacity-100":"opacity-0"}`}>
-     <Image
-          src={src[0]}
-          fill="responsive"
-          //   className={`bg-green-500 object-contain opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
-          className={`  object-contain `}
-        />
-      </div>
-      <div className={` min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${src.length-1==transitionstart?transitionstart*100:transitionstart==0?"00":transitionstart*100}%] ${transitionstart==1?"opacity-100":"opacity-0"}`}>
-      <Image
-          src={src[1]}
-          fill
-          //   className={`  object-contain  opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
-          className={` object-contain `}
-          
-        />
-      </div>
-      <div className={`min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[${src.length-1==transitionstart?transitionstart*100:transitionstart==0?"00":transitionstart*100}%] ${transitionstart==2?"opacity-100":"opacity-0"}`}>
-
-      <Image
-          src={src[2]}
-          fill
-          //   className={`bg-black object-contain  opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
-          className={`  object-contain `}
-         
-        />
-      </div>
-    </div>
-  );
-//0,1,2//total 3 rounds(length of image array)
-//0--starting at 00%
-//1--add 100% to each
-//2--subract -200% from first and add 100% to remaing 2
-//3--(again start the values) and reset to 00%
 // return (
-//     <div className="bg-violet-500 w-[80%] h-[60vh] flex  overflow-visible">
-//       <div className={`bg-green-500 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[-100%]`}>
-//         asfadfaf
+//     <div className=" w-[80%] h-[60vh] flex  overflow-hidden">
+//       <div className={` min-w-[100%] h-[100%] transition-all ease-in-out duration-1000  -translate-x-[${src.length-1==transitionstart?(transitionstart-1)*(-1*100):transitionstart==0?"00":transitionstart*100}%] ${transitionstart==0?"opacity-100":"opacity-0"}`}>
+//      <Image
+//           src={src[0]}
+//           fill="responsive"
+//           //   className={`bg-green-500 object-contain opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
+//           className={`  object-contain `}
+//         />
 //       </div>
-//       <div className={`bg-yellow-400 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[200%]`}>ddddd</div>
-//       <div className={`bg-red-500 min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[200%]`}>eeee</div>
+//       <div className={` min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${src.length-1==transitionstart?transitionstart*100:transitionstart==0?"00":transitionstart*100}%] ${transitionstart==1?"opacity-100":"opacity-0"}`}>
+//       <Image
+//           src={src[1]}
+//           fill
+//           //   className={`  object-contain  opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
+//           className={` object-contain `}
+          
+//         />
+//       </div>
+//       <div className={`min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[${src.length-1==transitionstart?transitionstart*100:transitionstart==0?"00":transitionstart*100}%] ${transitionstart==2?"opacity-100":"opacity-0"}`}>
+
+//       <Image
+//           src={src[2]}
+//           fill
+//           //   className={`bg-black object-contain  opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
+//           className={`  object-contain `}
+         
+//         />
+//       </div>
 //     </div>
 //   );
+//0,1,2//total 3 rounds(length of image array)
+//0--starting at 00%//transitionStart==0
+//1--add 100% to each//tranisitionStart=1
+//2--subract -200% from first and add 100% to remaing 2//transitionstart=2
+//3--(again start the values) and reset to 00%//add 100% to each and subtract 200% from second//transitionstart=3
+//4//transitionTime=4//add 100% to each and subtract 200% from third
+//5//transitionTime=5//add 100% to each and subtract 200% from first
+return (
+    <div className="bg-violet-500 w-[80%] h-[60vh] flex  overflow-visible">
+      <div className={`bg-green-500 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[-100%]`}>
+        asfadfaf
+      </div>
+      <div className={`bg-yellow-400 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[200%]`}>ddddd</div>
+      <div className={`bg-red-500 min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[200%]`}>eeee</div>
+    </div>
+  );
 }
 
 export default Carousel;
