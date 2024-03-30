@@ -115,6 +115,7 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
 //1//tranisitionStart=1//add 100% to each and subtract 200% from third child (second child view)
 //2//transitionstart=2//add 100% to remaing 2 and subract -200% from first and //(third child view)
 //3///transitionstart=3//add 100% to each and subtract 200% from second
+//repetition start
 //4//transitionTime=4//add 100% to each and subtract 200% from third
 //5//transitionTime=5//add 100% to each and subtract 200% from first
 //6//transitionTime=6//add 100% to each and subtract 200% from second child
