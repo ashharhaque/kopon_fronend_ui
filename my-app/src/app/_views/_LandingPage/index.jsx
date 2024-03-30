@@ -71,11 +71,11 @@ function LandingPage() {
         </div>
       </div>
       <div className="flex justify-center">
-      <Carousel className=" min-h[min-content] w-full flex justify-center" 
+      <Carousel
         src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage]}
         ImageWidth={"100%"}
         ImageHeight={"60vh"}
-        className="bg-yellow-500 flex justify-center m-[12px]  w-[100%] h-[60dvh] overflow-hidden  relative"
+        className="bg-green-300   flex justify-center m-[12px]  w-[100%] h-[60dvh] overflow-hidden  relative"
         // src={[CarVideo]}
         />
       </div>
