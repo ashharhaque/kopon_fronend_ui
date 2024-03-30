@@ -64,14 +64,28 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
   //       />
   //     </div>
   //   );
-
-  return (
+  console.log("transition start---->",transitionstart)
+//   return (
+//     <div className="bg-violet-500 w-[80%] h-[60vh] flex  overflow-visible">
+//       <div className="bg-green-500 min-w-[100%] h-[100%] -translate-x-[0%]">
+//         asfadfaf
+//       </div>
+//       <div className="bg-yellow-400 min-w-[100%] h-[100%] -translate-x-[0%]">ddddd</div>
+//       <div className="bg-red-500 min-w-[100%] h-[100%] -translate-x-[0%]">eeee</div>
+//     </div>
+//   );
+//0,1,2//total 3 rounds
+//0--starting at 00%
+//1--add 100% to each
+//2--subract -200% from first and add 100% to remaing 2
+//3--(again start the values) and reset to 00%
+return (
     <div className="bg-violet-500 w-[80%] h-[60vh] flex  overflow-visible">
-      <div className="bg-green-500 min-w-[100%] h-[100%] -translate-x-[-100%]">
+      <div className="bg-green-500 min-w-[100%] h-[100%] -translate-x-[00%]">
         asfadfaf
       </div>
-      <div className="bg-yellow-400 min-w-[100%] h-[100%] -translate-x-[200%]">ddddd</div>
-      <div className="bg-red-500 min-w-[100%] h-[100%] -translate-x-[200%]">eeee</div>
+      <div className="bg-yellow-400 min-w-[100%] h-[100%] -translate-x-[00%]">ddddd</div>
+      <div className="bg-red-500 min-w-[100%] h-[100%] -translate-x-[00%]">eeee</div>
     </div>
   );
 }
