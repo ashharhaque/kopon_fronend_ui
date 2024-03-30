@@ -61,7 +61,7 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
 
   //   );
   return (
-    <div className="bg-yellow-500 flex justify-center  w-[50%] h-[60dvh] overflow-hidden  relative">
+    <div className="bg-yellow-500 flex justify-center m-[12px]  w-[100%] h-[60dvh] overflow-hidden  relative">
       {/* <Image
         src={src[0]}
         // fill="responsive"
