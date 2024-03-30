@@ -89,7 +89,7 @@ return (
           className={`  object-contain `}
         />
       </div>
-      <div className={` min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${src.length-1==transitionstart?transitionstart*100:transitionstart==0?"00":transitionstart*100}%]`}>
+      <div className={` min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${src.length-1==transitionstart?transitionstart*100:transitionstart==0?"00":transitionstart*100}%] ${transitionstart==1?"opacity-100":"opacity-0"}`}>
       <Image
           src={src[1]}
           fill
@@ -98,7 +98,7 @@ return (
           
         />
       </div>
-      <div className={`min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[${src.length-1==transitionstart?transitionstart*100:transitionstart==0?"00":transitionstart*100}%]`}>
+      <div className={`min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[${src.length-1==transitionstart?transitionstart*100:transitionstart==0?"00":transitionstart*100}%] ${transitionstart==2?"opacity-100":"opacity-0"}`}>
 
       <Image
           src={src[2]}
