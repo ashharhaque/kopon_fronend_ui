@@ -121,11 +121,11 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
 //6//transitionTime=6//add 100% to each and subtract 200% from second child
 return (
     <div className="bg-violet-500 w-[80%] h-[60vh] flex  overflow-visible">
-      <div className={`bg-green-500 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${transitionstart==0?"00": transitionstart-2==0?((transitionstart-1)*(-1*100)):transitionstart==src.length?(0)*(100):(transitionstart*100)}%]`}>
+      <div className={`bg-green-500 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${transitionstart==0?"00": transitionstart-2==0?((transitionstart-1)*(-1*100)):transitionstart==src.length?(0)*(100):(transitionstart*100)}%] ${transitionstart==0 || transitionstart==3?"opacity-100":"opacity-0"}`}>
         asfadfaf
       </div>
-      <div className={`bg-yellow-400 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${transitionstart==0?"00":transitionstart==src.length?(0)*(100):(transitionstart*100)}%]`}>ddddd</div>
-      <div className={`bg-red-500 min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[${transitionstart==0?"300": transitionstart==1?(src.length-2)*100:transitionstart==src.length?(transitionstart*100):(transitionstart*100)}%]`}>eeee</div>
+      <div className={`bg-yellow-400 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${transitionstart==0?"00":transitionstart==src.length?(0)*(100):(transitionstart*100)}%] ${transitionstart==1?"opacity-100":"opacity-0"}`}>ddddd</div>
+      <div className={`bg-red-500 min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[${transitionstart==0?"300": transitionstart==1?(src.length-2)*100:transitionstart==src.length?(transitionstart*100):(transitionstart*100)}%] ${transitionstart==2?"opacity-100":"opacity-0"}`}>eeee</div>
       {/* <div className={`bg-red-500 min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[300)}%]`}>eeee</div> */}
 
     </div>
