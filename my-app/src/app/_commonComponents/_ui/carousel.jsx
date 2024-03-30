@@ -67,11 +67,11 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
 
   return (
     <div className="bg-violet-500 w-[80%] h-[60vh] flex  overflow-visible">
-      <div className="bg-green-500 min-w-[100%] h-[100%] -translate-x-[100%]">
+      <div className="bg-green-500 min-w-[100%] h-[100%] -translate-x-[-100%]">
         asfadfaf
       </div>
-      <div className="bg-yellow-400 min-w-[100%] h-[100%] -translate-x-[100%]">ddddd</div>
-      <div className="bg-red-500 min-w-[100%] h-[100%] -translate-x-[100%]">eeee</div>
+      <div className="bg-yellow-400 min-w-[100%] h-[100%] -translate-x-[200%]">ddddd</div>
+      <div className="bg-red-500 min-w-[100%] h-[100%] -translate-x-[200%]">eeee</div>
     </div>
   );
 }
