@@ -75,7 +75,7 @@ function LandingPage() {
         src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage]}
         ImageWidth={"100%"}
         ImageHeight={"60vh"}
-        
+        className="bg-yellow-500 flex justify-center m-[12px]  w-[100%] h-[60dvh] overflow-hidden  relative"
         // src={[CarVideo]}
         />
       </div>
