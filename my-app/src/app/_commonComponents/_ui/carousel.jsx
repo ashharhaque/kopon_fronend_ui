@@ -25,7 +25,7 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
     };
   }, []);
 
-  //   return (
+ 
   //     <div
   //     className={`${className}`}
   //     // className="bg-yellow-500 flex justify-center m-[12px]  w-[100%] h-[60dvh] overflow-hidden  relative"
@@ -65,7 +65,7 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
   //     </div>
   //   );
   console.log("transition start---->", transitionstart);
-  //   return (
+
   //     <div className="bg-violet-500 w-[80%] h-[60vh] flex  overflow-visible">
   //       <div className="bg-green-500 min-w-[100%] h-[100%] -translate-x-[0%]">
   //         asfadfaf
@@ -120,9 +120,9 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
   //5//transitionTime=5//add 100% to each and subtract 200% from first
   //6//transitionTime=6//add 100% to each and subtract 200% from second child
   return (
-    <div className="bg-violet-500 w-[80%] h-[60vh] flex  overflow-hidden">
+    <div className="bg-violet-500 w-[80%] h-[60vh] flex  ">
       <div
-        className={`bg-green-500 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${
+        className={`bg-green-500 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${
           transitionstart == 0
             ? "00"
             : transitionstart - 2 == 0
@@ -133,7 +133,7 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
         }%] ${
           transitionstart == 0 || transitionstart == 3
             ? "opacity-100"
-            : "opacity-0"
+            : "opacity-100"
         }`}
       >
         <Image
@@ -144,13 +144,13 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
         />
       </div>
       <div
-        className={`bg-yellow-400 min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${
+        className={`bg-yellow-400 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${
           transitionstart == 0
             ? "00"
             : transitionstart == src.length
             ? 0 * 100
             : transitionstart * 100
-        }%] ${transitionstart == 1 ? "opacity-100" : "opacity-0"}`}
+        }%] ${transitionstart == 1 ? "opacity-100" : "opacity-100"}`}
       >
          <Image
             src={src[1]}
@@ -161,7 +161,7 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
           />
       </div>
       <div
-        className={`bg-red-500 min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[${
+        className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[${
           transitionstart == 0
             ? "300"
             : transitionstart == 1
@@ -169,7 +169,7 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
             : transitionstart == src.length
             ? transitionstart * 100
             : transitionstart * 100
-        }%] ${transitionstart == 2 ? "opacity-100" : "opacity-0"}`}
+        }%] ${transitionstart == 2 ? "opacity-100" : "opacity-100"}`}
       >
          <Image
             src={src[2]}
