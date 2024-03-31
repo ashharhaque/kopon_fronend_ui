@@ -170,7 +170,7 @@ console.log("currentIndex---->",currentIndex)
   // );
 
   return (
-    <div className="bg-violet-500 w-[80%] h-[60vh] flex overflow ">
+    <div className="w-[80%] h-[60vh] flex overflow-hidden ">
      {
        //     <div
   //       className={`bg-yellow-400 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 
@@ -186,8 +186,9 @@ console.log("currentIndex---->",currentIndex)
         
         //  ${currentIndex==idx?`-translate-x-[${idx*100}%] opacity-100`:currentIndex==src.length-1 && idx==0?`-translate-x-[-100%]`:`-translate-x-[${currentIndex*100}%]`}
         // `}
+        
         style={{
-          backgroundColor: 'red',
+          // backgroundColor: 'red',
           position: 'relative',
           minWidth: '100%',
           height: '100%',
@@ -197,7 +198,7 @@ console.log("currentIndex---->",currentIndex)
             : currentIndex === src.length - 1 && idx === 0
             ? 'translateX(-100%)'
             : `translateX(${currentIndex * 100*(-1)}%)`,
-          // opacity: currentIndex === idx || (currentIndex === src.length - 1 && idx === 0) ? 1 : 0,
+          opacity: currentIndex === idx || (currentIndex === src.length - 1 && idx === 0) ? 1 : 0,
         }}
       >
          <Image
