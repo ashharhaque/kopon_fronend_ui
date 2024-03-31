@@ -182,10 +182,23 @@ console.log("currentIndex---->",currentIndex)
         return(
           <div
           key={idx}
-        className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 
+        // className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 
         
-         ${currentIndex==idx?`-translate-x-[${idx*100}%] opacity-100`:currentIndex==src.length-1 && idx==0?`-translate-x-[-100%]`:`-translate-x-[${currentIndex*100}%]`}
-        `}
+        //  ${currentIndex==idx?`-translate-x-[${idx*100}%] opacity-100`:currentIndex==src.length-1 && idx==0?`-translate-x-[-100%]`:`-translate-x-[${currentIndex*100}%]`}
+        // `}
+        style={{
+          backgroundColor: 'red',
+          position: 'relative',
+          minWidth: '100%',
+          height: '100%',
+          transition: 'all 1000ms ease-in-out',
+          transform: currentIndex === idx
+            ? `translateX(${idx * 100*(-1)}%)`
+            : currentIndex === src.length - 1 && idx === 0
+            ? 'translateX(-100%)'
+            : `translateX(${currentIndex * 100*(-1)}%)`,
+          // opacity: currentIndex === idx || (currentIndex === src.length - 1 && idx === 0) ? 1 : 0,
+        }}
       >
          <Image
             src={src[idx]}
