@@ -3,6 +3,8 @@ import Image from "next/image";
 import DelieveryPartnerImage from "@/public/delieveryPartnerTransparent.png";
 import FastFoodImage from "@/public/fastFoodsTransparent.png";
 import PeopleFoodImage from "@/public/peopleFoodTransparent.png";
+import FoodInTableImage from "@/public/foodintable.jpeg";
+import SingleFoodImage from "@/public/singlefood.jpeg";
 // import CarVideo from "/carVideo.mp4"
 // import CarVideo from "/public/sample_video.mp4"
 import Carousel from "@/app/_commonComponents/_ui/carousel";
@@ -72,7 +74,7 @@ function LandingPage() {
       </div>
       <div className="flex justify-center">
       <Carousel
-        src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage]}
+        src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage,FoodInTableImage,SingleFoodImage]}
         ImageWidth={"100%"}
         ImageHeight={"60vh"}
         // className="bg-green-300   flex justify-center m-[12px]  w-[100%] h-[60dvh] overflow-hidden  relative"

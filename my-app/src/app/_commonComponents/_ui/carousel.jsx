@@ -170,7 +170,7 @@ console.log("currentIndex---->",currentIndex)
   // );
 
   return (
-    <div className="bg-violet-500 w-[80%] h-[60vh] flex overflow-hidden ">
+    <div className="bg-violet-500 w-[80%] h-[60vh] flex overflow ">
      {
        //     <div
   //       className={`bg-yellow-400 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 
@@ -181,9 +181,10 @@ console.log("currentIndex---->",currentIndex)
       src.map((image,idx)=>{
         return(
           <div
-        className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 opacity-0
+          key={idx}
+        className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 
         
-         ${src.length-1==idx && currentIndex==0?`-translate-x-[${(src.length)*100}%]`:currentIndex==idx?`-translate-x-[${(idx*100)}%] opacity-100`:currentIndex==src.length-1 && idx==0?`-translate-x-[-100%]`:`-translate-x-[${currentIndex*100}%]`}
+         ${currentIndex==idx?`-translate-x-[${idx*100}%] opacity-100`:currentIndex==src.length-1 && idx==0?`-translate-x-[-100%]`:`-translate-x-[${currentIndex*100}%]`}
         `}
       >
          <Image
