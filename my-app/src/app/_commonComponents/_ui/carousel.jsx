@@ -126,7 +126,7 @@ console.log("currentIndex---->",currentIndex)
     <div className="bg-violet-500 w-[80%] h-[60vh] flex  ">
       <div
         className={`bg-green-500 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000  
-        ${currentIndex==0?"opacity-100":currentIndex-0==2?`-translate-x-[-${(src.length-1)*100}%]`:`-translate-x-[${currentIndex*100}%]`}
+        ${currentIndex==0?`-translate-x-[${(0*100)}%]`:currentIndex-0==2?`-translate-x-[-${(src.length-1)*100}%]`:`-translate-x-[${currentIndex*100}%]`}
         `}
       >
         <Image
@@ -137,7 +137,8 @@ console.log("currentIndex---->",currentIndex)
         />
       </div>
       <div
-        className={`bg-yellow-400 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-0
+        className={`bg-yellow-400 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 
+        ${currentIndex==1?`-translate-x-[${(1*100)}%]`:currentIndex-1==2?`-translate-x-[-${(src.length-1)*100}%]`:`-translate-x-[${currentIndex*100}%]`}
          
         `}
       >
@@ -151,8 +152,8 @@ console.log("currentIndex---->",currentIndex)
       </div>
       <div
         className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 
-        -translate-x-0
-         ${src.length-1==2 && currentIndex==0?`-translate-x-[${(src.length)*100}%]`:'translate-x-0'}
+        
+         ${src.length-1==2 && currentIndex==0?`-translate-x-[${(src.length)*100}%]`:currentIndex==2?`-translate-x-[${(2*100)}%]`:currentIndex-1==2?`-translate-x-[-${(src.length-1)*100}%]`:`-translate-x-[${currentIndex*100}%]`}
         `}
       >
          <Image
