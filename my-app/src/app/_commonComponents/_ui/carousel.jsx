@@ -126,7 +126,7 @@ console.log("currentIndex---->",currentIndex)
     <div className="bg-violet-500 w-[80%] h-[60vh] flex  ">
       <div
         className={`bg-green-500 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000  
-        ${currentIndex==0?`-translate-x-[${(0*100)}%]`:currentIndex-0==2?`-translate-x-[-${(src.length-1)*100}%]`:`-translate-x-[${currentIndex*100}%]`}
+        ${currentIndex==0?`-translate-x-[${(0*100)}%]`:currentIndex-0==2?`-translate-x-[-${(src.length-2)*100}%]`:`-translate-x-[${currentIndex*100}%]`}
         `}
       >
         <Image
