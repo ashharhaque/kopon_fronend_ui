@@ -122,49 +122,82 @@ console.log("currentIndex---->",currentIndex)
   
   //current index---visible
   //image index==currentIndex-1--->
+  //below is code is working fine now making the code dynamic
+  // return (
+  //   <div className="bg-violet-500 w-[80%] h-[60vh] flex  ">
+  //     <div
+  //       className={`bg-green-500 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000  
+  //       ${currentIndex==0?`-translate-x-[${(0*100)}%] opacity-100`:currentIndex==src.length-1?`-translate-x-[-100%]`:`-translate-x-[${currentIndex*100}%]`}
+  //       `}
+  //     >
+  //       <Image
+  //         src={src[0]}
+  //         fill="responsive"
+  //         //   className={`bg-green-500 object-contain opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
+  //         className={`  object-contain `}
+  //       />
+  //     </div>
+  //     <div
+  //       className={`bg-yellow-400 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 
+  //       ${currentIndex==1?`-translate-x-[${(1*100)}%] opacity-100`:`-translate-x-[${currentIndex*100}%]`}
+         
+  //       `}
+  //     >
+  //        <Image
+  //           src={src[1]}
+  //           fill
+  //           //   className={`  object-contain  opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
+  //           className={` object-contain `}
+
+  //         />
+  //     </div>
+  //     <div
+  //       className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 
+        
+  //        ${src.length-1==2 && currentIndex==0?`-translate-x-[${(src.length)*100}%]`:currentIndex==2?`-translate-x-[${(2*100)}%] opacity-100`:`-translate-x-[${currentIndex*100}%]`}
+  //       `}
+  //     >
+  //        <Image
+  //           src={src[2]}
+  //           fill
+  //           //   className={`bg-black object-contain  opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
+  //           className={`  object-contain `}
+
+  //         />
+  //     </div>
+  //     {/* <div className={`bg-red-500 min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[300)}%]`}>eeee</div> */}
+  //   </div>
+  // );
+
   return (
     <div className="bg-violet-500 w-[80%] h-[60vh] flex  ">
-      <div
-        className={`bg-green-500 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000  
-        ${currentIndex==0?`-translate-x-[${(0*100)}%] opacity-100`:currentIndex==src.length-1?`-translate-x-[-100%]`:`-translate-x-[${currentIndex*100}%]`}
-        `}
-      >
-        <Image
-          src={src[0]}
-          fill="responsive"
-          //   className={`bg-green-500 object-contain opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
-          className={`  object-contain `}
-        />
-      </div>
-      <div
-        className={`bg-yellow-400 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 
-        ${currentIndex==1?`-translate-x-[${(1*100)}%] opacity-100`:`-translate-x-[${currentIndex*100}%]`}
+     {
+       //     <div
+  //       className={`bg-yellow-400 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 
+  //       ${currentIndex==1?`-translate-x-[${(1*100)}%] opacity-100`:`-translate-x-[${currentIndex*100}%]`}
          
-        `}
-      >
-         <Image
-            src={src[1]}
-            fill
-            //   className={`  object-contain  opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
-            className={` object-contain `}
-
-          />
-      </div>
-      <div
+  //       `}
+  //     >
+      src.map((image,idx)=>{
+        return(
+          <div
         className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 
         
-         ${src.length-1==2 && currentIndex==0?`-translate-x-[${(src.length)*100}%]`:currentIndex==2?`-translate-x-[${(2*100)}%] opacity-100`:`-translate-x-[${currentIndex*100}%]`}
+         ${src.length-1==idx && currentIndex==0?`-translate-x-[${(src.length)*100}%]`:currentIndex==idx?`-translate-x-[${(idx*100)}%] opacity-100`:currentIndex==src.length-1 && idx==0?`-translate-x-[-100%]`:`-translate-x-[${currentIndex*100}%]`}
         `}
       >
          <Image
-            src={src[2]}
+            src={src[idx]}
             fill
             //   className={`bg-black object-contain  opacity-100 scale-100  transition-all ease-in-out delay-300 duration-1000 `}
             className={`  object-contain `}
 
           />
       </div>
-      {/* <div className={`bg-red-500 min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[300)}%]`}>eeee</div> */}
+          )
+      })
+     }
+      
     </div>
   );
 }
