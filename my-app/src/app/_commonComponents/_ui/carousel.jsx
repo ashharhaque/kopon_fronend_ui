@@ -2,19 +2,19 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 function Carousel({ className, src, ImageWidth, ImageHeight }) {
-  const [currentSrc, setCurrentSrc] = useState(src[0]);
   const [transitionstart, setTransitionStart] = useState(0);
-  console.log("src----->", src);
+  const [currentIndex,setCurrentIndex]=useState(0);
+  // console.log("src----->", src);
   useEffect(() => {
     let count = 0;
     const srcSlider = () => {
       try {
-        setCurrentSrc(src[count % src.length]);
+        setCurrentIndex(count);
         count++;
-        if (count > src.length) {
+        if (count ==src.length) {
           count = 0;
         }
-        setTransitionStart(count);
+        // setTransitionStart(count);
       } catch (err) {
         console.log("err in srcSlider---->", err);
       }
@@ -64,8 +64,8 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
   // />
   //     </div>
   //   );
-  console.log("transition start---->", transitionstart);
-
+  // console.log("transition start---->", transitionstart);
+console.log("currentIndex---->",currentIndex)
   //     <div className="bg-violet-500 w-[80%] h-[60vh] flex  overflow-visible">
   //       <div className="bg-green-500 min-w-[100%] h-[100%] -translate-x-[0%]">
   //         asfadfaf
@@ -119,10 +119,15 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
   //4//transitionTime=4//add 100% to each and subtract 200% from third
   //5//transitionTime=5//add 100% to each and subtract 200% from first
   //6//transitionTime=6//add 100% to each and subtract 200% from second child
+  
+  //current index---visible
+  //image index==currentIndex-1--->
   return (
     <div className="bg-violet-500 w-[80%] h-[60vh] flex  ">
       <div
-        className={`bg-green-500 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000  -translate-x-0`}
+        className={`bg-green-500 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000  
+        ${currentIndex==0}
+        `}
       >
         <Image
           src={src[0]}
@@ -133,7 +138,8 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
       </div>
       <div
         className={`bg-yellow-400 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-0
-         `}
+         
+        `}
       >
          <Image
             src={src[1]}
@@ -144,7 +150,10 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
           />
       </div>
       <div
-        className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-0`}
+        className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 
+        -translate-x-0
+         ${src.length-1==2 && currentIndex==0?`-translate-x-[${(src.length)*100}%]`:'translate-x-0'}
+        `}
       >
          <Image
             src={src[2]}
