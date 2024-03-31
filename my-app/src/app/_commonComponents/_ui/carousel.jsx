@@ -122,19 +122,7 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
   return (
     <div className="bg-violet-500 w-[80%] h-[60vh] flex  ">
       <div
-        className={`bg-green-500 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${
-          transitionstart == 0
-            ? "00"
-            : transitionstart - 2 == 0
-            ? (transitionstart - 1) * (-1 * 100)
-            : transitionstart == src.length
-            ? 0 * 100
-            : transitionstart * 100
-        }%] ${
-          transitionstart == 0 || transitionstart == 3
-            ? "opacity-100"
-            : "opacity-100"
-        }`}
+        className={`bg-green-500 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000  -translate-x-0`}
       >
         <Image
           src={src[0]}
@@ -144,13 +132,8 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
         />
       </div>
       <div
-        className={`bg-yellow-400 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-[${
-          transitionstart == 0
-            ? "00"
-            : transitionstart == src.length
-            ? 0 * 100
-            : transitionstart * 100
-        }%] ${transitionstart == 1 ? "opacity-100" : "opacity-100"}`}
+        className={`bg-yellow-400 relative min-w-[100%] h-[100%] transition-all ease-in-out duration-1000 -translate-x-0
+         `}
       >
          <Image
             src={src[1]}
@@ -161,15 +144,7 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
           />
       </div>
       <div
-        className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-[${
-          transitionstart == 0
-            ? "300"
-            : transitionstart == 1
-            ? (src.length - 2) * 100
-            : transitionstart == src.length
-            ? transitionstart * 100
-            : transitionstart * 100
-        }%] ${transitionstart == 2 ? "opacity-100" : "opacity-100"}`}
+        className={`bg-red-500 relative min-w-[100%] h-[100%]  transition-all ease-in-out duration-1000 -translate-x-0`}
       >
          <Image
             src={src[2]}
