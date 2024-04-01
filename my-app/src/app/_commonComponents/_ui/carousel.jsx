@@ -34,6 +34,7 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
         return(
           <div
           key={idx}
+          
           style={{
           // backgroundColor: 'red',
           position: 'relative',
@@ -51,7 +52,8 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
          <Image
             src={src[idx]}
             fill
-            className={`  object-contain `}
+            className={`object-contain`}
+          
 
           />
       </div>
