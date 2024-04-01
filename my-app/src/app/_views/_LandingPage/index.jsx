@@ -76,7 +76,7 @@ function LandingPage() {
       </div>
       <div className="flex justify-center">
       <Carousel
-        className="w-[80%] h-[60vh] flex bg-black"
+        className="w-[80%] h-[60vh] flex "
         src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage,FoodInTableImage,SingleFoodImage,RestaurantImage,RestaurantImageBus]}
         ImageWidth={"100%"}
         ImageHeight={"60vh"}

@@ -29,11 +29,12 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
  
 
   return (
-    <div className={`${className} overflow-hidden `}>
+    <div  className={`${className} overflow-hidden `}>
      {
 
       src.map((image,idx)=>{
         return(
+          <>
           <div
           key={idx}
           
@@ -53,12 +54,31 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
       >
          <Image
             src={src[idx]}
+            key={idx}
             fill
             className={`object-contain`}
           
 
           />
       </div>
+      <div key={idx}>
+        <Image
+        key={idx}
+        src={LessThanImage}
+        className="w-[10%] object-contain"
+        />
+          
+        
+      </div>
+      <div key={idx}>
+        <Image
+        key={idx}
+        src={GreaterThanImage}
+        className="w-[100%] object-contain"
+        />
+
+      </div>
+      </>
           )
       })
      }
