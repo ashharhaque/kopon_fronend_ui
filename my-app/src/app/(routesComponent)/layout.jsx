@@ -120,7 +120,7 @@ function layoutViews({ children }) {
           </div>
         </header>
         <div className=" max-w-[100dvw]">{children}</div>
-        <footer className=" flex flex-col min-h-[40dvh]">
+        <footer className=" flex flex-col min-h-[40dvh] bg-green-400">
           <div className="min-h-[85%] flex flex-col md:flex-row  justify-around ">
             <div className=" p-3 flex flex-col gap-5 text-center basis-[20%] ">
               <h3 className="">Company Name</h3>

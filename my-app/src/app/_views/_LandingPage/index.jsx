@@ -7,6 +7,7 @@ import FoodInTableImage from "@/public/foodintable.jpeg";
 import SingleFoodImage from "@/public/singlefood.jpeg";
 import RestaurantImage from "@/public/restaurantImage.jpeg";
 import RestaurantImageBus from "@/public/restaurantImageBus.jpeg";
+import FastFoodAll from "@/public/fastFoodsAll.jpeg";
 // import CarVideo from "/carVideo.mp4"
 // import CarVideo from "/public/sample_video.mp4"
 import Carousel from "@/app/_commonComponents/_ui/carousel";
@@ -74,13 +75,16 @@ function LandingPage() {
           />
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center bg-fuchsia-500 my-4">
       <Carousel
         className="w-[80%] h-[60vh] flex "
         src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage,FoodInTableImage,SingleFoodImage,RestaurantImage,RestaurantImageBus]}
         ImageWidth={"100%"}
         ImageHeight={"60vh"}
         />
+      </div>
+      <div className="w-[100%] h-[70vh] bg-red-500">
+        as
       </div>
         
     </>
