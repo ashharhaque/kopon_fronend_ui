@@ -8,7 +8,7 @@ import SingleFoodImage from "@/public/singlefood.jpeg";
 import RestaurantImage from "@/public/restaurantImage.jpeg";
 import RestaurantImageBus from "@/public/restaurantImageBus.jpeg";
 import FastFoodAll from "@/public/fastFoodsAll.jpeg";
-import ContentWithBgImg from "@/ui/backgroundImageContent"
+import ContentWithBgImg from "@/ui/contentWithBgImg"
 // import CarVideo from "/carVideo.mp4"
 // import CarVideo from "/public/sample_video.mp4"
 import Carousel from "@/app/_commonComponents/_ui/carousel";
@@ -85,7 +85,9 @@ function LandingPage() {
         />
       </div>
       <div className="w-[100%] h-[70vh] bg-red-500">
-        <ContentWithBgImg/>
+        <ContentWithBgImg className="bg-yellow-400 w-[100%] h-[100%]">
+          Background image component is created
+        </ContentWithBgImg>
       </div>
         
     </>
