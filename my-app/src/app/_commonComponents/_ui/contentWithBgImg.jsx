@@ -1,8 +1,8 @@
 
 
-function ContentWithBgImg({className,children}) {
+function ContentWithBgImg({className,children,style}) {
   return (
-    <div className={className}>{children}</div>
+    <div className={className} style={{style}}>{children}</div>
   )
 }
 

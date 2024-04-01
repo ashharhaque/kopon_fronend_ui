@@ -85,7 +85,7 @@ function LandingPage() {
         />
       </div>
       <div className="w-[100%] h-[70vh] bg-red-500">
-        <ContentWithBgImg className="bg-yellow-400 w-[100%] h-[100%]">
+        <ContentWithBgImg className="bg-yellow-400 w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-auto">
           Background image component is created
         </ContentWithBgImg>
       </div>
