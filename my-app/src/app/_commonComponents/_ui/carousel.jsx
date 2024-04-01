@@ -27,7 +27,7 @@ function Carousel({ className, src, ImageWidth, ImageHeight }) {
  
 
   return (
-    <div className="w-[80%] h-[60vh] flex overflow-hidden ">
+    <div className={`${className} overflow-hidden `}>
      {
 
       src.map((image,idx)=>{
