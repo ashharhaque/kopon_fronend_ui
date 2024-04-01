@@ -84,8 +84,8 @@ function LandingPage() {
         ImageHeight={"60vh"}
         />
       </div>
-      <div className="w-[100%] h-[70vh] bg-red-500">
-        <ContentWithBgImg className="bg-yellow-400 w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-auto">
+      <div className="w-[100%] aspect-video bg-red-500">
+        <ContentWithBgImg className="bg-yellow-400 w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-cover">
           Background image component is created
         </ContentWithBgImg>
       </div>
