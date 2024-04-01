@@ -1,5 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
+import GreaterThanImage from "@/public/icons/greaterThanSign.svg"
+import LessThanImage from "@/public/icons/lessThanSign.svg";
 import Image from "next/image";
 function Carousel({ className, src, ImageWidth, ImageHeight }) {
   const [transitionstart, setTransitionStart] = useState(0);
