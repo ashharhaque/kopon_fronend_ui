@@ -92,11 +92,11 @@ function LandingPage() {
         />
       </div>
       {/* naggaro code sticky it */}
-      <div className=" ">
-        <h1 className="flex justify-center sticky top-0 ">Ashhar</h1>
+      <div className="flex flex-col ">
+        <h1 className="bg-yellow-500 flex justify-center sticky top-0 left-1/2 font-bold text-2xl">Ashhar</h1>
         <div className="w-[100%] aspect-video ">
           <ContentWithBgImg className="bg-blue-300 flex  flex-col justify-center w-[100%] aspect-video ">
-            <h1 className="sticky top-0  flex justify-center items-center ">
+            <h1 className="sticky top-0  flex justify-center items-center font-bold text-2xl">
               Background image component is created
             </h1>
           </ContentWithBgImg>
@@ -104,7 +104,7 @@ function LandingPage() {
 
         <div className="w-[100%] aspect-video ">
           <ContentWithBgImg className="bg-red-400 flex  flex-col justify-center w-[100%] h-[100%]  grayscale-100">
-          <h1 className="sticky top-0  flex justify-center items-center ">
+          <h1 className="sticky top-0  flex justify-center items-center font-bold text-2xl">
               Background image component is created
             </h1>
           </ContentWithBgImg>
@@ -112,7 +112,7 @@ function LandingPage() {
 
         <div className="w-[100%] aspect-video ">
           <ContentWithBgImg className="bg-green-300 flex  flex-col justify-center w-[100%] h-[100%] grayscale-100">
-          <h1 className="sticky top-0  flex justify-center items-center ">
+          <h1 className="sticky top-0  flex justify-center items-center font-bold text-2xl">
               Background image component is created
             </h1>
           </ContentWithBgImg>
