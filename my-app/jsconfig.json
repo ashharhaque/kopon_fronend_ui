@@ -5,7 +5,7 @@
       "@/*": ["./src/*"],
       "@/icons/*":["./src/app/_commonComponents/_icon/*"],
       "@/public/*":["./public/*"],
-      "@/views/*":["./src/app/_views"],
+      "@/views/*":["./src/app/_views/*"],
       "@/ui/*":["./src/app/_commonComponents/_ui/*"]
     }
   },
