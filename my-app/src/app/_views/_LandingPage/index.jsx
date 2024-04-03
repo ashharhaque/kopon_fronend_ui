@@ -93,7 +93,7 @@ function LandingPage() {
       </div>
       {/* naggaro code sticky it */}
       <div className="flex flex-col ">
-        <h1 className="bg-yellow-500 flex justify-center sticky top-1/3 font-bold text-2xl">Ashhar</h1>
+        <h1 className="bg-yellow-500 flex px-[300px] sticky top-1/3 font-bold text-2xl">Ashhar</h1>
         <div className="w-[100%] aspect-video ">
           <ContentWithBgImg className="bg-blue-300 flex  flex-col justify-center w-[100%] aspect-video ">
             <h1 className="sticky top-1/3  flex justify-center items-center font-bold text-2xl">
