@@ -93,28 +93,28 @@ function LandingPage() {
       </div>
       {/* naggaro code sticky it */}
       <div className=" ">
-        <h1 className=" sticky top-0 ">Ashhar</h1>
+        <h1 className="flex justify-center sticky top-0 ">Ashhar</h1>
         <div className="w-[100%] aspect-video ">
           <ContentWithBgImg className="flex  flex-col justify-center w-[100%] aspect-video bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
-            <div className="sticky top-0 w-[100%] h-[30%] flex justify-center items-center ">
+            <h1 className="sticky top-0  flex justify-center items-center ">
               Background image component is created
-            </div>
+            </h1>
           </ContentWithBgImg>
         </div>
 
         <div className="w-[100%] aspect-video ">
           <ContentWithBgImg className=" flex  flex-col justify-center w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
-            <div className="sticky top-0 w-[100%] h-[30%] flex justify-center items-center ">
+          <h1 className="sticky top-0  flex justify-center items-center ">
               Background image component is created
-            </div>
+            </h1>
           </ContentWithBgImg>
         </div>
 
         <div className="w-[100%] aspect-video ">
           <ContentWithBgImg className=" flex  flex-col justify-center w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
-            <div className="sticky top-0 w-[100%] h-[30%] flex justify-center items-center ">
+          <h1 className="sticky top-0  flex justify-center items-center ">
               Background image component is created
-            </div>
+            </h1>
           </ContentWithBgImg>
         </div>
       </div>
