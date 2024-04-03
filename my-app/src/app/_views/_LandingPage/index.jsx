@@ -85,7 +85,7 @@ function LandingPage() {
         />
       </div>
       <div className="w-[100%] aspect-video bg-red-500">
-        <ContentWithBgImg className="bg-yellow-400 flex  flex-col justify-center w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
+        <ContentWithBgImg className="bg-yellow-400 flex  flex-col justify-center w-[100%] aspect-video bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
         <div className="bg-green-400 sticky top-0 w-[100%] h-[30%] flex justify-center items-center ">
         Background image component is created
         </div>  
