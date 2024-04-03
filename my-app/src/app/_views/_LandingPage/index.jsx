@@ -8,7 +8,7 @@ import SingleFoodImage from "@/public/singlefood.jpeg";
 import RestaurantImage from "@/public/restaurantImage.jpeg";
 import RestaurantImageBus from "@/public/restaurantImageBus.jpeg";
 import FastFoodAll from "@/public/fastFoodsAll.jpeg";
-import ContentWithBgImg from "@/ui/contentWithBgImg"
+import ContentWithBgImg from "@/ui/contentWithBgImg";
 // import CarVideo from "/carVideo.mp4"
 // import CarVideo from "/public/sample_video.mp4"
 import Carousel from "@/app/_commonComponents/_ui/carousel";
@@ -36,7 +36,7 @@ function LandingPage() {
         </div>
       </div>
       <div className=" md:flex md:flex-row-reverse justify-around relative m-10">
-      <article className=" basis-[40%] text-center flex items-center ">
+        <article className=" basis-[40%] text-center flex items-center ">
           <p className="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
@@ -54,7 +54,6 @@ function LandingPage() {
             className=" object-contain min-h-[100%] w-[100%] md:h-[30%]"
           />
         </div>
-       
       </div>
       <div className=" md:flex justify-around relative m-10">
         <article className=" basis-[40%] text-center flex items-center">
@@ -77,37 +76,47 @@ function LandingPage() {
         </div>
       </div>
       <div className="flex justify-center bg-fuchsia-500 my-4">
-      <Carousel
-        className="w-[80%] h-[60vh] flex "
-        src={[DelieveryPartnerImage,FastFoodImage,PeopleFoodImage,FoodInTableImage,SingleFoodImage,RestaurantImage,RestaurantImageBus]}
-        ImageWidth={"100%"}
-        ImageHeight={"60vh"}
+        <Carousel
+          className="w-[80%] h-[60vh] flex "
+          src={[
+            DelieveryPartnerImage,
+            FastFoodImage,
+            PeopleFoodImage,
+            FoodInTableImage,
+            SingleFoodImage,
+            RestaurantImage,
+            RestaurantImageBus,
+          ]}
+          ImageWidth={"100%"}
+          ImageHeight={"60vh"}
         />
       </div>
-      <div className="w-[100%] aspect-video bg-red-500">
-        <ContentWithBgImg className="bg-yellow-400 flex  flex-col justify-center w-[100%] aspect-video bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
-        <div className="bg-green-400 sticky top-0 w-[100%] h-[30%] flex justify-center items-center ">
-        Background image component is created
-        </div>  
-        </ContentWithBgImg>
-      </div>
+      {/* naggaro code sticky it */}
+      <div>
+        <div className="w-[100%] aspect-video bg-red-500">
+          <ContentWithBgImg className="bg-yellow-400 flex  flex-col justify-center w-[100%] aspect-video bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
+            <div className="bg-green-400 sticky top-0 w-[100%] h-[30%] flex justify-center items-center ">
+              Background image component is created
+            </div>
+          </ContentWithBgImg>
+        </div>
 
-      <div className="w-[100%] aspect-video bg-red-500">
-        <ContentWithBgImg className="bg-yellow-400 flex  flex-col justify-center w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
-        <div className="bg-blue-400 sticky top-0 w-[100%] h-[30%] flex justify-center items-center ">
-        Background image component is created
-        </div>  
-        </ContentWithBgImg>
-      </div>
+        <div className="w-[100%] aspect-video bg-red-500">
+          <ContentWithBgImg className="bg-yellow-400 flex  flex-col justify-center w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
+            <div className="bg-blue-400 sticky top-0 w-[100%] h-[30%] flex justify-center items-center ">
+              Background image component is created
+            </div>
+          </ContentWithBgImg>
+        </div>
 
-      <div className="w-[100%] aspect-video bg-red-500">
-        <ContentWithBgImg className="bg-yellow-400 flex  flex-col justify-center w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
-        <div className="bg-green-400 sticky top-0 w-[100%] h-[30%] flex justify-center items-center ">
-        Background image component is created
-        </div>  
-        </ContentWithBgImg>
+        <div className="w-[100%] aspect-video bg-red-500">
+          <ContentWithBgImg className="bg-yellow-400 flex  flex-col justify-center w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
+            <div className="bg-red-400 sticky top-0 w-[100%] h-[30%] flex justify-center items-center ">
+              Background image component is created
+            </div>
+          </ContentWithBgImg>
+        </div>
       </div>
-        
     </>
   );
 }
