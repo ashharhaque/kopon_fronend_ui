@@ -95,7 +95,7 @@ function LandingPage() {
       <div className=" ">
         <h1 className="flex justify-center sticky top-0 ">Ashhar</h1>
         <div className="w-[100%] aspect-video ">
-          <ContentWithBgImg className="flex  flex-col justify-center w-[100%] aspect-video bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
+          <ContentWithBgImg className="bg-blue-300 flex  flex-col justify-center w-[100%] aspect-video ">
             <h1 className="sticky top-0  flex justify-center items-center ">
               Background image component is created
             </h1>
@@ -103,7 +103,7 @@ function LandingPage() {
         </div>
 
         <div className="w-[100%] aspect-video ">
-          <ContentWithBgImg className=" flex  flex-col justify-center w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
+          <ContentWithBgImg className="bg-red-400 flex  flex-col justify-center w-[100%] h-[100%]  grayscale-100">
           <h1 className="sticky top-0  flex justify-center items-center ">
               Background image component is created
             </h1>
@@ -111,7 +111,7 @@ function LandingPage() {
         </div>
 
         <div className="w-[100%] aspect-video ">
-          <ContentWithBgImg className=" flex  flex-col justify-center w-[100%] h-[100%] bg-[url('/fastFoodsAll.jpeg')] bg-cover grayscale-100">
+          <ContentWithBgImg className="bg-green-300 flex  flex-col justify-center w-[100%] h-[100%] grayscale-100">
           <h1 className="sticky top-0  flex justify-center items-center ">
               Background image component is created
             </h1>
