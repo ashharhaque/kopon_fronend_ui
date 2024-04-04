@@ -17,15 +17,22 @@ function LandingPage() {
   const handleIntersection=async(entries)=>{
     try{
       entries.map((entry,idx)=>{
-        console.log("each entry of entries---->",entry);
+        console.log("each entry of entries---->",entry.isIntersecting);
+        if(entry.isIntersecting){
+          entry.target.className="bg-red-500   basis-[40%] text-center flex items-center transition-all ease-in-out duration-1000 translate-x-0"
+        }
       })
     }catch(err){
       console.log("error in interSection api---->",err)
     }
   }
   useEffect(()=>{
-    const observer = new IntersectionObserver(handleIntersection);
+    const observer = new IntersectionObserver(handleIntersection,{
+      // rootMargin:"-300px",
+      threshold:1
+    });
     observer.observe(observedElementRef.current)
+    // return observer.disconnect()
   },[])
   return (
     <>
@@ -69,8 +76,8 @@ function LandingPage() {
           />
         </div>
       </div>
-      <div className=" md:flex justify-around relative m-10" ref={observedElementRef}>
-        <article className=" basis-[40%] text-center flex items-center">
+      <div className="bg-yellow-300 md:flex justify-around relative m-10 overflow-hidden" >
+        <article ref={observedElementRef} className=" basis-[40%] text-center flex items-center transition-all ease-in-out duration-100 -translate-x-[40px] ">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
