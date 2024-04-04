@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState,useRef, useEffect } from "react";
 import Image from "next/image";
 // import KoponLogo from "./../../../public/Kopon_transparent.png"
 import KoponLogo from "@/public/Kopon_transparent.png";
@@ -19,6 +19,7 @@ import {
 
 function layoutViews({ children }) {
   const [menuToggleOpen, setMenuToggleOpen] = useState(false);
+
   return (
     <>
       <div className="flex flex-col bg-white  min-h-dvh justify-between ">

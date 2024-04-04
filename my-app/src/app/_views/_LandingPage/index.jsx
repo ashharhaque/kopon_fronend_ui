@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import {useRef,useEffect} from "react";
 import Image from "next/image";
 import DelieveryPartnerImage from "@/public/delieveryPartnerTransparent.png";
 import FastFoodImage from "@/public/fastFoodsTransparent.png";
@@ -12,6 +13,20 @@ import ContentFixedslide from "@/views/_LandingPage/ContentFixedSlide"
 // import CarVideo from "/public/sample_video.mp4"
 import Carousel from "@/app/_commonComponents/_ui/carousel";
 function LandingPage() {
+  const observedElementRef=useRef(null);
+  const handleIntersection=async(entries)=>{
+    try{
+      entries.map((entry,idx)=>{
+        console.log("each entry of entries---->",entry);
+      })
+    }catch(err){
+      console.log("error in interSection api---->",err)
+    }
+  }
+  useEffect(()=>{
+    const observer = new IntersectionObserver(handleIntersection);
+    observer.observe(observedElementRef.current)
+  },[])
   return (
     <>
       <div className=" md:flex justify-around relative m-10">
@@ -54,7 +69,7 @@ function LandingPage() {
           />
         </div>
       </div>
-      <div className=" md:flex justify-around relative m-10">
+      <div className=" md:flex justify-around relative m-10" ref={observedElementRef}>
         <article className=" basis-[40%] text-center flex items-center">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
