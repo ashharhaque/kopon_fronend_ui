@@ -37,9 +37,9 @@ function LandingPage() {
     }
   }
   useEffect(()=>{
-    const observer = new IntersectionObserver(handleIntersection,{
+    const observer=new IntersectionObserver((e)=>handleIntersection(e,setIsVisible),{
       threshold:.5
-    });
+    })
     const observerOne=new IntersectionObserver((e)=>handleIntersection(e,setIsVisibleOne),{
       threshold:.5
     })
