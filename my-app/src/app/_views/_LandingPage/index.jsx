@@ -75,7 +75,7 @@ function LandingPage() {
           />
         </div>
       </div>
-      <div className=" md:flex md:flex-row-reverse justify-around relative m-10" ref={observedElementRefTwo}>
+      <div className=" md:flex md:flex-row-reverse justify-around relative m-10 overflow-hidden" ref={observedElementRefTwo}>
         <article className={` basis-[40%] text-center flex items-center md:transition-all md:ease-in-out  md:duration-1000 ${isVisibleTwo?"bg-red-300 md:translate-x-0 md:opacity-100":"md:translate-x-[200%] md:opacity-0"} `}>
           <p className="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
