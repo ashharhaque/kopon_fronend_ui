@@ -5,6 +5,7 @@ import DelieveryPartnerImage from "@/public/delieveryPartnerTransparent.png";
 import FastFoodImage from "@/public/fastFoodsTransparent.png";
 import PeopleFoodImage from "@/public/peopleFoodTransparent.png";
 import WaiterServingFood from "@/public/waiterServingTransparent.png";
+import CustomerOrderingFood from "@/public/customerOrderingTransparent.png";
 
 // import CarVideo from "/carVideo.mp4"
 // import CarVideo from "/public/sample_video.mp4"
@@ -84,7 +85,7 @@ const DoubleArticle = (props) => {
         </article>
         <div className="relative  ">
           <Image
-            src={DelieveryPartnerImage}
+            src={CustomerOrderingFood}
             className=" object-contain min-h-[100%] w-[100%] md:h-[30%]"
           />
         </div>
@@ -113,7 +114,7 @@ const DoubleArticle = (props) => {
         </article>
         <div className="relative  ">
           <Image
-            src={FastFoodImage}
+            src={WaiterServingFood}
             className=" object-contain min-h-[100%] w-[100%] md:h-[30%]"
           />
         </div>
@@ -142,7 +143,7 @@ const DoubleArticle = (props) => {
         </article>
         <div className="relative  ">
           <Image
-            src={WaiterServingFood}
+            src={DelieveryPartnerImage}
             className="object-contain min-h-[100%] w-[100%] md:h-[30%] "
           />
         </div>
