@@ -15,12 +15,16 @@ import Carousel from "@/app/_commonComponents/_ui/carousel";
 function LandingPage() {
   const observedElementRef=useRef(null);
   const handleIntersection=async(entries)=>{
+    console.log("inside handleIntersection---->")
     try{
       entries.map((entry,idx)=>{
         console.log("each entry of entries---->",entry.isIntersecting);
+        console.log("intersectio ratio---->",entry)
         if(entry.isIntersecting){
-          entry.target.className="bg-red-500   basis-[40%] text-center flex items-center transition-all ease-in-out duration-1000 translate-x-0"
+          entry.target.className="bg-red-500   basis-[40%] text-center flex items-center transition-all duration-1000 translate-x-0 opacity-100"
         }
+        // entry.target.className="bg-red-500   basis-[40%] text-center flex items-center transition-all duration-1000 translate-x-[20px] "
+
       })
     }catch(err){
       console.log("error in interSection api---->",err)
@@ -28,11 +32,19 @@ function LandingPage() {
   }
   useEffect(()=>{
     const observer = new IntersectionObserver(handleIntersection,{
+      // root:null,
+
       // rootMargin:"-300px",
-      threshold:1
+      threshold:[0,.25,.5,.75,1]
     });
-    observer.observe(observedElementRef.current)
+   
+      observer.observe(observedElementRef.current)
+    
     // return observer.disconnect()
+    // return () => {
+    //   if(observedElementRef.current)
+    //   observer.unobserve(observedElementRef.current);
+    // }
   },[])
   return (
     <>
@@ -76,8 +88,8 @@ function LandingPage() {
           />
         </div>
       </div>
-      <div className="bg-yellow-300 md:flex justify-around relative m-10 overflow-hidden" >
-        <article ref={observedElementRef} className=" basis-[40%] text-center flex items-center transition-all ease-in-out duration-100 -translate-x-[40px] ">
+      <div className="bg-yellow-300 md:flex justify-around relative m-10 " >
+        <article ref={observedElementRef} className=" basis-[40%] text-center flex items-center translate-x-[-100%]  ">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
