@@ -4,6 +4,7 @@ import PeopleFoodImage from "@/public/peopleFoodTransparent.png";
 import FoodInTableImage from "@/public/foodintable.jpeg";
 import SingleFoodImage from "@/public/singlefood.jpeg";
 import RestaurantImage from "@/public/restaurantImage.jpeg";
+import WaiterServingFood from "@/public/waiterServingTransparent.png";
 import RestaurantImageBus from "@/public/restaurantImageBus.jpeg";
 import ContentFixedslide from "@/views/_LandingPage/ContentFixedSlide";
 import DoubleArticle from "@/views/_LandingPage/DoubleSection";
@@ -25,6 +26,7 @@ function LandingPage() {
             SingleFoodImage,
             RestaurantImage,
             RestaurantImageBus,
+            WaiterServingFood
           ]}
           ImageWidth={"100%"}
           ImageHeight={"60vh"}
