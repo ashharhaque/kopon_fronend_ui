@@ -19,7 +19,6 @@ function LandingPage() {
   const observedElementRef=useRef(null);
   const observedElementRefTwo=useRef(null);
   const observedElementRefOne=useRef(null);
-
   const handleIntersection=async(entries,setVisibility)=>{
     console.log("inside handleIntersection---->");
     try{
