@@ -1,5 +1,5 @@
 "use client"
-import {useRef,useEffect} from "react";
+import {useRef,useEffect,useState} from "react";
 import Image from "next/image";
 import DelieveryPartnerImage from "@/public/delieveryPartnerTransparent.png";
 import FastFoodImage from "@/public/fastFoodsTransparent.png";
@@ -13,6 +13,7 @@ import ContentFixedslide from "@/views/_LandingPage/ContentFixedSlide"
 // import CarVideo from "/public/sample_video.mp4"
 import Carousel from "@/app/_commonComponents/_ui/carousel";
 function LandingPage() {
+  const [isVisible,setIsVisible]=useState(false);
   const observedElementRef=useRef(null);
   const handleIntersection=async(entries)=>{
     console.log("inside handleIntersection---->")
@@ -21,7 +22,10 @@ function LandingPage() {
         console.log("each entry of entries---->",entry.isIntersecting);
         console.log("intersectio ratio---->",entry)
         if(entry.isIntersecting){
-          entry.target.className="bg-red-500   basis-[40%] text-center flex items-center transition-all duration-1000 translate-x-0 opacity-100"
+          // entry.target.className="bg-red-500   basis-[40%] text-center flex items-center transition-all duration-1000 translate-x-0 opacity-100"
+         setIsVisible(true)
+        }else{
+          setIsVisible(false)
         }
         // entry.target.className="bg-red-500   basis-[40%] text-center flex items-center transition-all duration-1000 translate-x-[20px] "
 
@@ -35,7 +39,7 @@ function LandingPage() {
       // root:null,
 
       // rootMargin:"-300px",
-      threshold:[0,.25,.5,.75,1]
+      threshold:.5
     });
    
       observer.observe(observedElementRef.current)
@@ -88,8 +92,8 @@ function LandingPage() {
           />
         </div>
       </div>
-      <div className="bg-yellow-300 md:flex justify-around relative m-10 " >
-        <article ref={observedElementRef} className=" basis-[40%] text-center flex items-center translate-x-[-100%]  ">
+      <div className="bg-yellow-300 md:flex justify-around relative m-10 " ref={observedElementRef} >
+        <article  className={` basis-[40%] text-center flex items-center transition-all ease-in-out  duration-1000 translate-x-[-200%] ${isVisible?"bg-red-300 translate-x-0 opacity-100":"translate-x-[-200%] opacity-0"} `}>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
